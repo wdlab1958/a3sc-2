@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+<meta name="description" content="여러 AI 에이전트 프레임워크를 한곳에서 묶어 운영하는 멀티 에이전트 플랫폼 NexusAI를 소개합니다.">
+<meta name="keywords" content="소프트웨어,서비스,시스템,보안,유통,컨설팅">
+<meta name="Classification" content="보안컨설팅 및 서비스 소프트웨어 개발,유통 및 판매 외">
+<meta property="og:type" content="website">
+<meta property="og:title" content="NexusAI · 멀티 에이전트 플랫폼 | 에이쓰리시큐리티">
+<meta property="og:site_name" content="에이쓰리시큐리티">
+<meta property="og:image" content="resources/images/A3/img/A3_favicon.png">
+<meta property="og:description" content="여러 AI 에이전트 프레임워크를 한곳에서 묶어 운영하는 멀티 에이전트 플랫폼 NexusAI를 소개합니다.">
+
+<meta property="og:url" content="https://www.a3sc.co.kr/a3sc/ISMA3SC003M14.do">
+<meta property="al:web:url" content="https://www.a3sc.co.kr">
+<meta name="robots" content="noindex,nofollow" />
+<link rel="shortcut icon" href="resources/images/A3/img/A3_favicon.png" />
+<link rel="icon" href="resources/images/A3/img/A3_favicon.png" />
+<title>NexusAI · 멀티 에이전트 플랫폼 | 에이쓰리시큐리티</title>
+
+<style>@font-face{font-family:'Pretendard Variable';src:url(resources/font/renewal/PretendardVariable.woff2) format('woff2-variations');font-weight:45 920;font-style:normal;font-display:swap}</style>
+<link rel="stylesheet" href="resources/css/A3/renewal/b.css">
+<link rel="stylesheet" href="resources/css/A3/renewal/onecycle_product.css">
+
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+
+<header class="gh"><div class="wrap"><a class="logo" href="https://www.a3sc.co.kr/a3sc/ISMA3SC001M1.do"><img class="on-dark" src="resources/images/A3/renewal/img/foot_logo.png" alt="A3 SECURITY"><img class="on-light" src="resources/images/A3/renewal/img/logo.png" alt="A3 SECURITY"></a>
+  <nav><a href="https://www.a3sc.co.kr/a3sc/ISMA3SC002M1.do" class="">회사소개</a><a href="../" class="on">AI 플랫폼</a><a href="https://www.a3sc.co.kr/a3sc/ISMA3SC003M1.do" class="">보안 서비스</a><a href="https://www.a3sc.co.kr/a3sc/ISMA3SC004M1.do?brdType=N" class="">정보센터</a><a href="https://wdlab1958.github.io/a3sc/" class="">One Cycle Dev. Framework</a></nav>
+  <a class="pill red hcta" href="#contact">문의하기</a><span class="brand"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-41 -41 16347 1438" role="img" aria-label="AI &amp; SECURITY"><path fill="currentColor" stroke="currentColor" stroke-width="41" stroke-linejoin="round" d="M937 902H412L320 1116Q286 1195 286 1234Q286 1265 315.5 1288.5Q345 1312 443 1319V1356H16V1319Q101 1304 126 1280Q177 1232 239 1085L716 -31H751L1223 1097Q1280 1233 1326.5 1273.5Q1373 1314 1456 1319V1356H921V1319Q1002 1315 1030.5 1292.0Q1059 1269 1059 1236Q1059 1192 1019 1097ZM909 828 679 280 443 828ZM2233.88 1319V1356H1652.88V1319H1700.88Q1784.88 1319 1822.88 1270Q1846.88 1238 1846.88 1116V240Q1846.88 137 1833.88 104Q1823.88 79 1792.88 61Q1748.88 37 1700.88 37H1652.88V0H2233.88V37H2184.88Q2101.88 37 2063.88 86Q2038.88 118 2038.88 240V1116Q2038.88 1219 2051.88 1252Q2061.88 1277 2093.88 1295Q2136.88 1319 2184.88 1319ZM4086.6400000000003 483H4506.64V520Q4419.64 527 4378.14 558.5Q4336.64 590 4248.64 749.0Q4160.64 908 4050.6400000000003 1046Q4139.64 1150 4209.64 1191.5Q4279.64 1233 4350.64 1233Q4419.64 1233 4467.64 1195.5Q4515.64 1158 4535.64 1085L4572.64 1112Q4535.64 1253 4453.64 1320.0Q4371.64 1387 4262.64 1387Q4180.64 1387 4096.14 1342.5Q4011.6400000000003 1298 3911.6400000000003 1192Q3787.6400000000003 1302 3688.1400000000003 1344.5Q3588.6400000000003 1387 3475.6400000000003 1387Q3310.6400000000003 1387 3213.6400000000003 1299.0Q3116.6400000000003 1211 3116.6400000000003 1089Q3116.6400000000003 968 3203.6400000000003 847.5Q3290.6400000000003 727 3530.6400000000003 598Q3483.6400000000003 494 3466.6400000000003 427.5Q3449.6400000000003 361 3449.6400000000003 300Q3449.6400000000003 129 3575.6400000000003 39Q3673.6400000000003 -31 3798.6400000000003 -31Q3917.6400000000003 -31 3992.6400000000003 39.5Q4067.6400000000003 110 4067.6400000000003 213Q4067.6400000000003 319 3995.1400000000003 399.0Q3922.6400000000003 479 3738.6400000000003 574Q3865.6400000000003 800 4003.6400000000003 988Q4179.64 778 4179.64 634Q4179.64 588 4149.64 552Q4127.64 525 4086.6400000000003 520ZM3704.6400000000003 509Q3828.6400000000003 450 3890.1400000000003 375.0Q3951.6400000000003 300 3951.6400000000003 208Q3951.6400000000003 136 3907.1400000000003 89.0Q3862.6400000000003 42 3796.6400000000003 42Q3709.6400000000003 42 3665.1400000000003 102.5Q3620.6400000000003 163 3620.6400000000003 221Q3620.6400000000003 270 3637.6400000000003 330.5Q3654.6400000000003 391 3704.6400000000003 509ZM3859.6400000000003 1134Q3727.6400000000003 954 3676.6400000000003 871.0Q3625.6400000000003 788 3564.6400000000003 665Q3444.6400000000003 734 3384.1400000000003 817.0Q3323.6400000000003 900 3323.6400000000003 997Q3323.6400000000003 1104 3392.6400000000003 1185.0Q3461.6400000000003 1266 3578.6400000000003 1266Q3641.6400000000003 1266 3700.1400000000003 1241.0Q3758.6400000000003 1216 3859.6400000000003 1134ZM6331.400000000001 -31V438H6294.400000000001Q6276.400000000001 303 6229.900000000001 223.0Q6183.400000000001 143 6097.400000000001 96.0Q6011.400000000001 49 5919.400000000001 49Q5815.400000000001 49 5747.400000000001 112.5Q5679.400000000001 176 5679.400000000001 257Q5679.400000000001 319 5722.400000000001 370Q5784.400000000001 445 6017.400000000001 570Q6207.400000000001 672 6276.900000000001 726.5Q6346.400000000001 781 6383.900000000001 855.0Q6421.400000000001 929 6421.400000000001 1010Q6421.400000000001 1164 6301.900000000001 1275.5Q6182.400000000001 1387 5994.400000000001 1387Q5935.400000000001 1387 5883.400000000001 1378Q5852.400000000001 1373 5754.900000000001 1341.5Q5657.400000000001 1310 5631.400000000001 1310Q5606.400000000001 1310 5591.900000000001 1325.0Q5577.400000000001 1340 5570.400000000001 1387H5533.400000000001V922H5570.400000000001Q5596.400000000001 1068 5640.400000000001 1140.5Q5684.400000000001 1213 5774.900000000001 1261.0Q5865.400000000001 1309 5973.400000000001 1309Q6098.400000000001 1309 6170.900000000001 1243.0Q6243.400000000001 1177 6243.400000000001 1087Q6243.400000000001 1037 6215.900000000001 986.0Q6188.400000000001 935 6130.400000000001 891Q6091.400000000001 861 5917.400000000001 763.5Q5743.400000000001 666 5669.900000000001 608.0Q5596.400000000001 550 5558.400000000001 480.0Q5520.400000000001 410 5520.400000000001 326Q5520.400000000001 180 5632.400000000001 74.5Q5744.400000000001 -31 5917.400000000001 -31Q6025.400000000001 -31 6146.400000000001 22Q6202.400000000001 47 6225.400000000001 47Q6251.400000000001 47 6267.900000000001 31.5Q6284.400000000001 16 6294.400000000001 -31ZM7082.280000000001 74V610H7380.280000000001Q7496.280000000001 610 7535.280000000001 575Q7587.280000000001 529 7593.280000000001 413H7630.280000000001V885H7593.280000000001Q7579.280000000001 786 7565.280000000001 758Q7547.280000000001 723 7506.280000000001 703.0Q7465.280000000001 683 7380.280000000001 683H7082.280000000001V1130Q7082.280000000001 1220 7090.280000000001 1239.5Q7098.280000000001 1259 7118.280000000001 1270.5Q7138.280000000001 1282 7194.280000000001 1282H7424.280000000001Q7539.280000000001 1282 7591.280000000001 1266.0Q7643.280000000001 1250 7691.280000000001 1203Q7753.280000000001 1141 7818.280000000001 1016H7858.280000000001L7741.280000000001 1356H6696.280000000001V1319H6744.280000000001Q6792.280000000001 1319 6835.280000000001 1296Q6867.280000000001 1280 6878.780000000001 1248.0Q6890.280000000001 1216 6890.280000000001 1117V236Q6890.280000000001 107 6864.280000000001 77Q6828.280000000001 37 6744.280000000001 37H6696.280000000001V0H7741.280000000001L7756.280000000001 297H7717.280000000001Q7696.280000000001 190 7670.780000000001 150.0Q7645.280000000001 110 7595.280000000001 89Q7555.280000000001 74 7454.280000000001 74ZM9261.16 -31 9292.16 430H9261.16Q9199.16 223 9084.16 132.0Q8969.16 41 8808.16 41Q8673.16 41 8564.16 109.5Q8455.16 178 8392.66 328.0Q8330.16 478 8330.16 701Q8330.16 885 8389.16 1020.0Q8448.16 1155 8566.66 1227.0Q8685.16 1299 8837.16 1299Q8969.16 1299 9070.16 1242.5Q9171.16 1186 9292.16 1018L9323.16 1038Q9221.16 1219 9085.16 1303.0Q8949.16 1387 8762.16 1387Q8425.16 1387 8240.16 1137Q8102.160000000001 951 8102.160000000001 699Q8102.160000000001 496 8193.16 326.0Q8284.16 156 8443.66 62.5Q8603.16 -31 8792.16 -31Q8939.16 -31 9082.16 41Q9124.16 63 9142.16 63Q9169.16 63 9189.16 44Q9215.16 17 9226.16 -31ZM10494.04 37V0H10974.04V37H10923.04Q10843.04 37 10800.04 104Q10779.04 135 10779.04 248V798Q10779.04 1002 10738.54 1114.5Q10698.04 1227 10579.54 1307.5Q10461.04 1388 10257.04 1388Q10035.04 1388 9920.04 1311.0Q9805.04 1234 9757.04 1104Q9725.04 1015 9725.04 770V240Q9725.04 115 9690.54 76.0Q9656.04 37 9579.04 37H9528.04V0H10114.04V37H10062.04Q9978.04 37 9942.04 90Q9917.04 126 9917.04 240V831Q9917.04 910 9931.54 1012.0Q9946.04 1114 9984.04 1171.0Q10022.04 1228 10093.54 1265.0Q10165.04 1302 10269.04 1302Q10402.04 1302 10507.04 1244.0Q10612.04 1186 10650.54 1095.5Q10689.04 1005 10689.04 789V240Q10689.04 113 10661.04 81Q10622.04 37 10545.04 37ZM12502.920000000002 1356H12140.920000000002L11681.920000000002 722Q11630.920000000002 724 11598.920000000002 724Q11585.920000000002 724 11570.920000000002 723.5Q11555.920000000002 723 11539.920000000002 722V1116Q11539.920000000002 1244 11567.920000000002 1275Q11605.920000000002 1319 11681.920000000002 1319H11734.920000000002V1356H11153.920000000002V1319H11204.920000000002Q11290.920000000002 1319 11327.920000000002 1263Q11348.920000000002 1232 11348.920000000002 1116V240Q11348.920000000002 112 11320.920000000002 81Q11281.920000000002 37 11204.920000000002 37H11153.920000000002V0H11647.920000000002Q11863.920000000002 0 11966.420000000002 31.5Q12068.920000000002 63 12140.420000000002 147.5Q12211.920000000002 232 12211.920000000002 349Q12211.920000000002 474 12130.420000000002 566.0Q12048.920000000002 658 11877.920000000002 696L12157.920000000002 1085Q12253.920000000002 1219 12322.920000000002 1263.0Q12391.920000000002 1307 12502.920000000002 1319ZM11539.920000000002 659Q11558.920000000002 659 11572.920000000002 659.5Q11586.920000000002 660 11595.920000000002 660Q11789.920000000002 660 11888.420000000002 576.0Q11986.920000000002 492 11986.920000000002 362Q11986.920000000002 235 11907.420000000002 155.5Q11827.920000000002 76 11696.920000000002 76Q11638.920000000002 76 11539.920000000002 95ZM13239.800000000003 1319V1356H12658.800000000003V1319H12706.800000000003Q12790.800000000003 1319 12828.800000000003 1270Q12852.800000000003 1238 12852.800000000003 1116V240Q12852.800000000003 137 12839.800000000003 104Q12829.800000000003 79 12798.800000000003 61Q12754.800000000003 37 12706.800000000003 37H12658.800000000003V0H13239.800000000003V37H13190.800000000003Q13107.800000000003 37 13069.800000000003 86Q13044.800000000003 118 13044.800000000003 240V1116Q13044.800000000003 1219 13057.800000000003 1252Q13067.800000000003 1277 13099.800000000003 1295Q13142.800000000003 1319 13190.800000000003 1319ZM14597.680000000002 0 14612.680000000002 318H14574.680000000002Q14563.680000000002 234 14544.680000000002 198Q14513.680000000002 140 14462.180000000002 112.5Q14410.680000000002 85 14326.680000000002 85H14135.680000000002V1121Q14135.680000000002 1246 14162.680000000002 1277Q14200.680000000002 1319 14279.680000000002 1319H14326.680000000002V1356H13751.680000000002V1319H13799.680000000002Q13885.680000000002 1319 13921.680000000002 1267Q13943.680000000002 1235 13943.680000000002 1121V85H13780.680000000002Q13685.680000000002 85 13645.680000000002 99Q13593.680000000002 118 13556.680000000002 172.0Q13519.680000000002 226 13512.680000000002 318H13474.680000000002L13490.680000000002 0ZM15762.560000000001 0H16235.560000000001V37H16209.560000000001Q16183.560000000001 37 16133.560000000001 60.0Q16083.560000000001 83 16042.560000000001 126.0Q16001.560000000001 169 15941.560000000001 266L15614.560000000001 781V1121Q15614.560000000001 1246 15642.560000000001 1277Q15680.560000000001 1319 15762.560000000001 1319H15806.560000000001V1356H15230.560000000001V1319H15278.560000000001Q15364.560000000001 1319 15400.560000000001 1267Q15422.560000000001 1235 15422.560000000001 1121V800L15050.560000000001 232Q14984.560000000001 132 14961.060000000001 107.0Q14937.560000000001 82 14863.560000000001 47Q14843.560000000001 37 14805.560000000001 37V0H15385.560000000001V37H15355.560000000001Q15308.560000000001 37 15269.060000000001 59.0Q15229.560000000001 81 15229.560000000001 125Q15229.560000000001 161 15290.560000000001 255L15573.560000000001 692L15839.560000000001 274Q15899.560000000001 180 15899.560000000001 134Q15899.560000000001 106 15885.060000000001 84.0Q15870.560000000001 62 15843.560000000001 49.5Q15816.560000000001 37 15762.560000000001 37Z"/></svg></span>
+  <button type="button" class="menu" aria-label="전체 메뉴" aria-expanded="false" aria-controls="mnav"></button></div>
+  <nav class="mnav" id="mnav" aria-label="전체 메뉴" hidden><div class="wrap"><div class="grp"><a class="h" href="https://www.a3sc.co.kr/a3sc/ISMA3SC002M1.do">회사소개</a><ul><li><a href="https://www.a3sc.co.kr/a3sc/ISMA3SC002M1.do">회사개요</a></li><li><a href="https://www.a3sc.co.kr/a3sc/ISMA3SC002M2.do">CEO 인사말</a></li><li><a href="https://www.a3sc.co.kr/a3sc/ISMA3SC002M3.do">연혁</a></li><li><a href="https://www.a3sc.co.kr/a3sc/ISMA3SC002M4.do">인재상</a></li><li><a href="https://www.a3sc.co.kr/a3sc/ISMA3SC002M5.do">찾아오시는 길</a></li><li><a href="https://www.saramin.co.kr/zf_user/company-info/view-inner-recruit?csn=ZU9zdmxNSTZCU0ViN1NJRC9NOGtPUT09" target="_blank" rel="noopener">채용공고 ↗</a></li></ul></div><div class="grp on"><a class="h" href="../">AI 플랫폼</a><ul><li><a href="../#intro">개요</a></li><li><a href="../#strength">강점</a></li><li><a href="../#lineup">플랫폼 6종</a></li><li><a href="https://wdlab1958.github.io/a3sc/">One Cycle Framework</a></li><li><a href="../#contact">도입 문의</a></li></ul></div><div class="grp"><a class="h" href="https://www.a3sc.co.kr/a3sc/ISMA3SC003M1.do">보안 서비스</a><ul><li><a href="https://www.a3sc.co.kr/a3sc/ISMA3SC003M1.do">보안컨설팅</a></li><li><a href="https://www.a3sc.co.kr/a3sc/ISMA3SC003M2.do">보안관제</a></li><li><a href="https://www.a3sc.co.kr/a3sc/ISMA3SC003M3.do">보안솔루션</a></li></ul></div><div class="grp"><a class="h" href="https://www.a3sc.co.kr/a3sc/ISMA3SC004M1.do?brdType=N">정보센터</a><ul><li><a href="https://www.a3sc.co.kr/a3sc/ISMA3SC004M1.do?brdType=N">공지사항</a></li><li><a href="https://www.a3sc.co.kr/a3sc/ISMA3SC004M1.do?brdType=C">뉴스클리핑</a></li><li><a href="https://www.a3sc.co.kr/a3sc/ISMA3SC004M1.do?brdType=T">보안동향</a></li><li><a href="https://www.a3sc.co.kr/a3sc/ISMA3SC004M1.do?brdType=R">보안권고</a></li></ul></div>
+  <a class="pill red" href="#contact">문의하기</a></div></nav>
+<script>/* 모바일 전체 메뉴 열고 닫기 */(function(){var b=document.querySelector('.gh .menu'),m=document.getElementById('mnav');if(!b||!m)return;function set(o){m.hidden=!o;b.setAttribute('aria-expanded',o);document.documentElement.classList.toggle('mnav-open',o)}b.addEventListener('click',function(){set(m.hidden)});m.addEventListener('click',function(e){if(e.target.closest('a'))set(false)});document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!m.hidden){set(false);b.focus()}});matchMedia('(min-width:761px)').addEventListener('change',function(e){if(e.matches)set(false)})})()</script></header>
+
+<main>
+<!-- =========================================================
+     NexusAI · 본문 (기존 레이아웃의 <main> … </main> 안에 넣는 부분)
+     AI 플랫폼(ISMA3SC003M4) 여섯 플랫폼 가운데 04 에이전트 통합 상세 화면
+     필요한 것: b.css 다음에 /resources/css/A3/renewal/onecycle_product.css
+     ========================================================= -->
+<section class="hero pd-hero" id="top">
+  <div class="pd-orbit" aria-hidden="true"><svg viewBox="0 0 400 400" fill="none">
+    <circle cx="200" cy="200" r="196" stroke="rgba(255,255,255,.06)"/>
+    <circle cx="200" cy="200" r="150" stroke="rgba(255,255,255,.14)"/>
+    <circle cx="200" cy="200" r="104" stroke="rgba(255,255,255,.07)"/>
+    <circle class="dot" cx="200" cy="50" r="4"/><circle class="dot" cx="329.9" cy="125" r="4"/><circle class="dot" cx="329.9" cy="275" r="4"/><circle class="halo" cx="200" cy="350" r="7"/><circle class="me" cx="200" cy="350" r="7"/><circle class="dot" cx="70.1" cy="275" r="4"/><circle class="dot" cx="70.1" cy="125" r="4"/>
+  </svg></div>
+  <div class="wrap">
+    <nav class="pd-crumb" aria-label="현재 위치"><a href="../">AI 플랫폼</a><a href="../#lineup">플랫폼 6종</a><b>04 에이전트 통합</b></nav>
+    <span class="kicker">NexusAI</span>
+    <h1>일을 맡기면, 여러 AI가<br><em>역할을 나눠 처리합니다</em></h1>
+    <p class="lede">NexusAI는 여러 AI 에이전트를 한 화면에서 만들고, 일을 나눠 맡기고, 결과를 모아 보는 플랫폼입니다. 만드는 방식이 서로 다른 에이전트 개발 도구 10종을 같은 방법으로 쓸 수 있게 연결했습니다. 어떤 AI 모델이 일을 처리하는지, 그때 데이터가 어디로 가는지도 구분해 보여 드립니다.</p>
+    <div class="hero-meta">
+      <div><b>10<small>종</small></b><span>연결 부품을 갖춘 에이전트 프레임워크</span></div>
+      <div><b>5<small>역할</small></b><span>기획·조사·분석·실행·검토로 나누는 협업</span></div>
+      <div><b>67<small>개</small></b><span>부서별 업무 스킬 (11개 영역 · 19개 부서)</span></div>
+      <div><b>11<small>종</small></b><span>연결할 수 있는 Google Workspace 서비스</span></div>
+    </div>
+    <nav class="subnav" id="pd-subnav"><a href="#intro" class="on">개요</a><a href="#how">동작 방식</a><a href="#frameworks">프레임워크·모델</a><a href="#features">주요 기능</a><a href="#output">결과물</a><a href="#cycle">함께 쓰는 플랫폼</a><a href="#terms">용어·FAQ</a><a href="#contact">도입 문의</a></nav>
+  </div>
+</section>
+
+<!-- 개요: 무엇이고, 왜 필요한가 -->
+<section class="sec"><div class="wrap pd-anchor" id="intro">
+  <div class="intro"><div><span class="kicker">Overview</span><h2>도구는 많은데,<br>쓰는 법이 <em>제각각입니다</em></h2></div>
+    <div class="prose"><p class="big">AI 에이전트를 업무에 붙여 보려고 하면 먼저 도구 선택에서 막힙니다. 에이전트를 만드는 도구가 여럿이고, 저마다 쓰는 법과 잘하는 일이 다르기 때문입니다.</p>
+    <p>AI 에이전트는 정해 준 역할 안에서 스스로 판단해 일을 수행하는 AI 프로그램입니다. 이것을 만드는 개발 도구를 프레임워크라고 부릅니다. 프레임워크마다 설정 방식이 달라서, 하나를 시험해 본 뒤 다른 것으로 바꾸려면 다시 만들어야 합니다. 어떤 AI 모델을 쓰는지, 회사 자료가 어디로 전송되는지도 도구마다 따로 확인해야 합니다.</p>
+    <p>NexusAI는 이 차이를 한 화면 뒤로 감춥니다. 사용자는 에이전트의 이름과 역할, 목표를 적고 프레임워크와 모델을 고르기만 하면 됩니다. 일이 크면 여러 역할의 에이전트에게 나눠 맡기고, 결과는 하나로 모아 받습니다. 이렇게 여러 에이전트의 일을 배분하고 순서를 맞추는 것을 오케스트레이션이라고 합니다.</p></div></div>
+  <div class="pd-plain"><span class="lb">쉽게 말하면</span>
+    <p>여러 전문 업체를 한 창구에서 부르는 <em>종합 접수 창구</em>와 같습니다. 접수는 한 곳에서 하고, 일은 맞는 담당에게 나뉘어 가며, 결과는 다시 한 창구로 돌아옵니다.</p>
+    <small>NexusAI에서 전문 업체는 프레임워크와 AI 모델이고, 접수 창구는 에이전트 관리 화면입니다. 창구는 누구에게 맡길지 정하고, 순서를 맞추고, 결과를 모읍니다.</small></div>
+  <div class="pd-cards">
+    <article><div class="ft"><span>도구가 여럿이어도</span><b>만드는 법은 하나</b></div><p>이름, 역할, 목표, 배경 설명을 적으면 에이전트가 만들어집니다. 프레임워크를 바꿔도 입력하는 항목은 같습니다.</p></article>
+    <article><div class="ft"><span>큰 일은</span><b>역할로 나눠서</b></div><p>기획 역할이 일을 작은 작업으로 쪼개고, 조사·분석·실행·검토 역할이 순서에 맞춰 처리합니다. 앞 작업의 결과는 다음 작업에 전달됩니다.</p></article>
+    <article><div class="ft"><span>모델과 데이터는</span><b>가는 곳을 구분</b></div><p>클라우드 모델을 쓰면 입력 내용이 그 제공사로 전송됩니다. 사내 장비의 로컬 모델로 처리할 수 있는 범위는 따로 정해져 있습니다.</p></article>
+    <article><div class="ft"><span>연결 안 된 기능은</span><b>안 됐다고 표시</b></div><p>외부 서비스가 필요한 기능은 연결 전까지 「미설정」이나 「예시 데이터」로 표시합니다. 성공한 것처럼 꾸민 결과를 내지 않습니다.</p></article>
+  </div>
+</div></section>
+
+<!-- 동작 방식 -->
+<section class="sec dark"><div class="wrap pd-anchor" id="how">
+  <div class="sec-h"><div><span class="kicker">How it works</span><h2>한 문장의 요청이<br>나뉘고, 다시 모입니다</h2></div><p>여러 역할이 함께 처리하는 「협업 워크플로」의 흐름입니다. 워크플로는 일을 처리하는 순서를 정해 둔 작업 흐름을 뜻합니다. 요청을 넣으면 계획이 먼저 나오고, 실행은 그다음에 시작됩니다.</p></div>
+  <ol class="pd-steps">
+    <li><b>요청</b><p>맡길 일을 문장으로 적습니다. 일의 난이도와, 꼭 참여시키고 싶은 역할이 있으면 함께 지정합니다.</p><span class="who h">사람이 입력</span></li>
+    <li><b>계획</b><p>AI가 요청을 작은 작업으로 나누고, 작업마다 맡을 역할과 선행 작업을 정합니다. 이 계획은 실행 전에 화면에서 확인할 수 있습니다.</p><span class="who">기획 역할 · AI</span></li>
+    <li><b>실행 지시</b><p>계획을 확인한 뒤 실행을 시작합니다. 같은 일이 이미 실행 중이면 두 번째 실행 요청은 거절되어, 같은 작업이 중복 처리되지 않습니다.</p><span class="who h">사람이 시작</span></li>
+    <li><b>역할별 처리</b><p>선행 작업이 끝난 작업부터 처리합니다. 서로 기다릴 필요가 없는 작업은 동시에 진행합니다. 각 역할은 앞선 작업의 결과를 참고 자료로 받습니다.</p><span class="who">조사 · 분석 · 실행 · 검토 역할</span></li>
+    <li><b>종합</b><p>역할별 결과를 하나의 최종 답으로 정리합니다. 도중에 모델 호출이 실패하면 그 일은 「실패」로 표시됩니다.</p><span class="who">AI</span></li>
+    <li><b>검토</b><p>결과는 초안입니다. 검토 역할의 AI가 한 번 살펴보지만, 사실 확인과 최종 판단은 담당자가 합니다.</p><span class="who h">사람이 확인</span></li>
+  </ol>
+  <div class="pd-legend"><span>AI 에이전트가 처리</span><span class="h">사람이 입력하거나 확인</span></div>
+</div></section>
+
+<!-- 프레임워크와 모델: 데이터가 가는 곳 -->
+<section class="sec soft"><div class="wrap pd-anchor" id="frameworks">
+  <div class="sec-h"><div><span class="kicker">Frameworks &amp; models</span><h2>무엇으로 실행하고<br>데이터는 어디로 가는가</h2></div><p>NexusAI에는 프레임워크 10종 각각에 맞춘 연결 부품(어댑터)이 들어 있습니다. 어댑터가 쓰는 AI 모델은 프레임워크마다 정해져 있고, 그에 따라 입력 내용이 전송되는 곳이 달라집니다.</p></div>
+  <div class="pd-tw"><table class="pd-table"><thead><tr><th scope="col">실행 방식</th><th scope="col">일하는 방식</th><th scope="col" class="hl">쓰는 모델 · 입력이 전송되는 곳</th></tr></thead><tbody>
+    <tr><th scope="row">CrewAI</th><td>역할과 목표를 가진 에이전트가 과제를 수행합니다.</td><td class="hl">Anthropic 또는 OpenAI</td></tr>
+    <tr><th scope="row">LangGraph</th><td>처리 단계를 그래프로 이어 메시지를 주고받습니다.</td><td class="hl">Anthropic 또는 OpenAI</td></tr>
+    <tr><th scope="row">AutoGen</th><td>종료 조건이 있는 대화 방식으로 과제를 풉니다.</td><td class="hl">OpenAI</td></tr>
+    <tr><th scope="row">Google ADK</th><td>Gemini 모델 기반으로 실행합니다.</td><td class="hl">Google</td></tr>
+    <tr><th scope="row">OpenAI Agents SDK</th><td>에이전트와 실행기 구조로 처리합니다.</td><td class="hl">OpenAI</td></tr>
+    <tr><th scope="row">Claude Agent</th><td>도구 호출을 최대 5회까지 되풀이하며 답을 만듭니다.</td><td class="hl">Anthropic</td></tr>
+    <tr><th scope="row">DSPy</th><td>단계적으로 추론하는 모듈로 답을 냅니다.</td><td class="hl">Anthropic 또는 OpenAI</td></tr>
+    <tr><th scope="row">CAMEL-AI</th><td>역할이 부여된 대화형 에이전트로 처리합니다.</td><td class="hl">Anthropic 또는 OpenAI</td></tr>
+    <tr><th scope="row">LlamaIndex</th><td>에이전트 워크플로 구조로 처리합니다.</td><td class="hl">Anthropic 또는 OpenAI</td></tr>
+    <tr><th scope="row">MetaGPT</th><td>역할과 행동을 정의하는 절차 방식으로 처리합니다.</td><td class="hl">MetaGPT 자체 설정을 따릅니다</td></tr>
+    <tr><th scope="row"><span class="st">직접 실행</span></th><td>프레임워크 없이 모델에 바로 묻습니다.</td><td class="hl">Anthropic, OpenAI, 또는 사내 로컬 모델(Ollama)</td></tr>
+    <tr><th scope="row"><span class="st">부서 스킬 · 로컬 채팅</span></th><td>사내 GPU 서버의 모델(vLLM)을 먼저 씁니다.</td><td class="hl">부서 스킬은 로컬 모델이 응답하지 않으면 Anthropic, OpenAI 순으로 넘어갑니다</td></tr>
+  </tbody></table></div>
+  <p class="pd-note">어댑터는 해당 프레임워크가 서버에 설치되어 있고 그 제공사의 API 키가 등록된 경우에만 동작합니다. 조건이 맞지 않으면 「직접 실행」으로 대체되고, 그 사실은 서버 기록에만 남습니다. 도입할 때 실제로 쓸 프레임워크를 정해 설치 상태를 확인해야 합니다. 프레임워크 어댑터는 현재 클라우드 모델만 사용하며, 각 어댑터는 에이전트 하나의 실행을 맡습니다.</p>
+</div></section>
+
+<!-- 주요 기능 -->
+<section class="sec"><div class="wrap pd-anchor" id="features">
+  <div class="sec-h"><div><span class="kicker">Features</span><h2>만들고, 나눠 맡기고,<br>업무 도구에 잇습니다</h2></div><p>에이전트를 만드는 화면에서 시작해, 여러 역할의 협업, 부서별로 준비된 업무 스킬, 외부 업무 도구 연결까지 한 곳에서 다룹니다. 화면은 한국어와 영어로 제공됩니다.</p></div>
+  <div class="rf">
+    <article class="lead"><h3>역할을 나눠 처리하는 협업 워크플로</h3>
+      <p>한 번에 답하기 어려운 일을 다섯 역할의 에이전트가 나눠 처리합니다. 계획 단계에서 작업 사이의 선후 관계가 정해지고, 실행 단계는 그 순서를 지킵니다. 이 기능은 Anthropic의 클라우드 모델로 동작합니다.</p>
+      <ul><li>기획 — 일을 작업으로 나누고 순서를 정함</li><li>조사 — 필요한 정보를 모아 정리</li><li>분석 — 모은 내용에서 의미를 찾아냄</li><li>실행 — 계획에 따라 결과물을 작성</li><li>검토 — 품질을 살피고 보완점을 제시</li><li>진행 상태와 역할별 결과를 화면에서 조회</li></ul></article>
+    <article><h3>에이전트 만들기</h3><p>코드를 쓰지 않고 화면에서 에이전트를 만듭니다. 실행할 때마다 결과와 걸린 시간이 이력으로 남습니다.</p><ul><li>이름, 역할, 목표, 배경 설명 입력</li><li>프레임워크와 모델 제공사 선택</li><li>미리 준비된 템플릿에서 시작</li><li>본인이 만든 에이전트만 조회·수정</li></ul></article>
+    <article><h3>부서별 업무 스킬</h3><p>부서에서 자주 하는 일을 스킬로 묶어 두었습니다. 스킬을 고르고 내용을 입력하면 AI가 그 업무 형식에 맞춰 결과를 작성합니다.</p><ul><li>11개 업무 영역, 19개 부서, 67개 스킬</li><li>여러 부서가 함께 쓰는 공통 스킬 8개</li><li>사내 로컬 모델을 먼저 사용</li></ul></article>
+    <article><h3>Google Workspace 연결</h3><p>서버에 설치한 Google Workspace 명령줄 도구(gws)를 거쳐 메일, 일정, 문서를 NexusAI 화면에서 다룹니다.</p><ul><li>Gmail, Calendar, Sheets, Docs, Drive 등 11종</li><li>스탠드업 보고, 회의 준비 등 묶음 작업 5종</li><li>도구 설치와 Google 계정 인증이 필요</li></ul></article>
+    <article><h3>승인을 거치는 명령 실행</h3><p>하고 싶은 일을 문장으로 적으면 AI가 서버 명령 계획을 만들고, 위험도에 따라 승인을 요청합니다.</p><ul><li>조회성 명령은 자동, 그 밖은 사람의 확인</li><li>시스템을 망가뜨릴 수 있는 명령은 차단</li><li>격리 환경이 아닌 서버에서 직접 실행</li></ul></article>
+  </div>
+</div></section>
+
+<!-- 결과물 -->
+<section class="sec soft"><div class="wrap pd-anchor" id="output">
+  <div class="sec-h"><div><span class="kicker">Deliverables</span><h2>맡긴 일은<br>기록과 함께 돌아옵니다</h2></div><p>결과와 함께, 어떤 방식으로 처리했는지, 얼마나 걸렸는지, 실패했다면 그 이유가 남습니다.</p></div>
+  <div class="pd-tw"><table class="pd-table"><thead><tr><th scope="col">결과물</th><th scope="col">담기는 내용</th><th scope="col">쓰임새</th></tr></thead><tbody>
+    <tr><th scope="row">에이전트 실행 결과</th><td>에이전트의 답, 선택한 프레임워크, 걸린 시간, 실패 시 오류 내용</td><td>같은 일을 다른 프레임워크나 모델에 맡겨 결과를 견주어 봅니다.</td></tr>
+    <tr><th scope="row">협업 계획</th><td>작업 목록, 작업별 담당 역할, 선행 작업</td><td>실행 전에 일이 어떻게 나뉘었는지 확인합니다.</td></tr>
+    <tr><th scope="row">협업 결과</th><td>역할별 작업 결과와 이를 종합한 최종 답</td><td>보고서나 기획안의 초안으로 쓰고, 담당자가 검토해 확정합니다.</td></tr>
+    <tr><th scope="row">부서 스킬 결과</th><td>선택한 스킬의 형식에 맞춘 문서 초안과 처리 시간</td><td>반복되는 문서 작업의 첫 원고를 줄입니다.</td></tr>
+    <tr><th scope="row">Google Workspace 작업</th><td>보낸 메일, 만든 일정, 추가한 시트 행, 작성한 문서</td><td>결과가 실제 Google 계정에 반영됩니다.</td></tr>
+    <tr><th scope="row">명령 실행 기록</th><td>AI가 세운 명령 계획, 승인 등급, 실행 결과</td><td>누가 무엇을 승인해 실행했는지 되짚습니다.</td></tr>
+    <tr><th scope="row">대화 이력</th><td>주고받은 내용과 토큰 수</td><td>사용량을 가늠합니다. 토큰은 모델이 글의 양을 세는 단위입니다.</td></tr>
+  </tbody></table></div>
+  <p class="pd-note">협업 워크플로의 진행 상태는 서버 메모리에 보관되어, 서버를 다시 시작하면 사라집니다. 필요한 결과는 따로 저장해 두어야 합니다. 분석 화면의 일부 지표와 부서 스킬 화면의 일부 통계는 예시 데이터이며, 화면에 그렇게 표시되어 있습니다.</p>
+</div></section>
+
+<!-- 원칙과 한계 -->
+<section class="sec dark"><div class="wrap">
+  <div class="pd-principle"><div><span class="kicker">Principle</span><p class="quote">연결되지 않은 것을<br><em>된 것처럼 보이지 않는다</em></p></div>
+    <div class="prose"><p class="big">여러 도구를 한데 묶은 플랫폼에서는 「메뉴가 있다」와 「실제로 동작한다」가 구분되어야 합니다.</p>
+    <p>NexusAI는 자체 점검에서 흉내만 내던 기능을 찾아 실제 구현으로 바꾸거나, 그럴 수 없는 것은 「미설정」, 「미구현」, 「AI가 생성한 내용」으로 표시하도록 고쳤습니다. 아래는 형식 검증에서 확인한 내용과 현재 구성의 한계입니다.</p></div></div>
+  <div class="pd-case">
+    <article><span class="st">CASE · 협업 워크플로의 형식 검증</span><h3>같은 일이 두 번 실행되지 않는가</h3>
+      <p>협업 워크플로의 실행 순서를 수학적 모델로 옮겨, 가능한 경우를 정해진 범위 안에서 빠짐없이 따져 보는 모델 검사를 적용했습니다. 같은 일에 실행 요청이 동시에 두 번 들어오면 모든 작업이 두 번씩 처리되는 결함 1건을 찾았습니다.</p>
+      <div class="res"><b>FIXED</b><span>실행 중인 일의 재실행을 거절하도록 고치고, 수정 전에는 실패하고 수정 후에는 통과하는 재현 시험으로 확인했습니다. 검사한 범위 안에서의 결과입니다.</span></div></article>
+    <article><span class="st">LIMITS · 현재의 한계</span>
+      <ol class="pd-chain">
+        <li><b>프레임워크는 대부분 클라우드 모델을 씁니다</b><span>프레임워크 어댑터와 협업 워크플로를 쓰면 입력 내용이 해당 모델 제공사로 전송됩니다.</span></li>
+        <li><b>일부 완료 표시는 사람이 확인해야 합니다</b><span>AI가 계획을 만들지 못해 기본 계획으로 대체된 경우 등에, 끝나지 않은 작업이 있는데도 「완료」로 표시될 수 있음이 확인되어 있습니다. 아직 고쳐지지 않았습니다.</span></li>
+        <li><b>Google 연결은 계정 하나를 함께 씁니다</b><span>서버에 인증한 Google 계정 하나로 모든 사용자의 요청이 처리됩니다. 사용자별 계정 분리는 지원하지 않습니다.</span></li>
+        <li><b>명령 실행은 격리되어 있지 않습니다</b><span>승인 절차는 있지만 명령은 서버에서 직접 실행됩니다. 신뢰할 수 있는 분리된 서버에서만 써야 합니다.</span></li>
+        <li><b>외부 서비스가 필요한 기능이 있습니다</b><span>음악·영상 생성, 웹 검색 도구 등은 외부 서비스를 연결하기 전에는 동작하지 않으며, 그 사실을 화면에 표시합니다.</span></li>
+      </ol></article>
+  </div>
+</div></section>
+
+<!-- 여섯 플랫폼 안에서의 자리 (이 구역의 pd-loop 와 pd-nav 는 여섯 화면 공통: 고치지 않는다) -->
+<section class="sec"><div class="wrap pd-anchor" id="cycle">
+  <div class="sec-h"><div><span class="kicker">In the lineup</span><h2>여섯 플랫폼 가운데<br>에이전트 통합 영역을 맡습니다</h2></div><p>어떤 에이전트 도구가 우리 업무에 맞는지 견주어 보려는 조직, 여러 부서가 같은 창구에서 AI를 쓰게 하려는 조직에 맞습니다. 다른 플랫폼 없이 단독으로 쓸 수 있으며, 협업 워크플로는 에이전트 플랫폼 검증 체계인 One Cycle Dev. Framework의 형식 검증을 거쳐 동시 실행 결함 1건을 찾아 고쳤습니다.</p></div>
+  <ol class="pd-loop" aria-label="에이쓰리시큐리티 AI 플랫폼 6종">
+    <li><a class="cell" href="../AIMES/"><i>01</i><b>AIMES</b><span>제조 실행</span></a></li>
+    <li><a class="cell" href="../TruthLens/"><i>02</i><b>TruthLens</b><span>딥페이크 탐지</span></a></li>
+    <li><a class="cell" href="../A3-AutoFlow/"><i>03</i><b>A3 AutoFlow</b><span>업무 자동화</span></a></li>
+    <li class="on" aria-current="page"><div class="cell"><i>04</i><b>NexusAI</b><span>에이전트 통합</span></div></li>
+    <li><a class="cell" href="../Cluster-Master/"><i>05</i><b>Cluster-Master</b><span>분산 컴퓨팅</span></a></li>
+    <li><a class="cell" href="../PokerFace-Pro/"><i>06</i><b>PokerFace Pro</b><span>표정 분석 코칭</span></a></li>
+  </ol>
+  <div class="pd-io">
+    <div><small>누가 쓰나</small><b>기획 담당자와 IT 관리자</b><span>기획 담당자는 에이전트를 만들어 일을 맡기고, IT 관리자는 프레임워크 설치, 모델 연결, API 키와 권한을 관리합니다.</span></div>
+    <div><small>무엇을 넣나</small><b>맡길 일과 에이전트의 역할</b><span>문장으로 적은 요청, 에이전트의 역할과 목표, 사용할 프레임워크와 모델을 넣습니다.</span></div>
+    <div><small>무엇을 얻나</small><b>나눠 처리한 결과와 실행 기록</b><span>역할별 결과와 종합된 답, 그리고 어떤 방식으로 얼마나 걸려 처리했는지의 기록을 얻습니다.</span></div>
+  </div>
+  <nav class="pd-nav" aria-label="다른 플랫폼">
+    <a class="prev" href="../A3-AutoFlow/"><small>← 이전 · 03 업무 자동화</small><b>A3 AutoFlow</b></a>
+    <a class="home" href="../#lineup"><small>전체 보기</small><b>AI 플랫폼 6종</b></a>
+    <a class="next" href="../Cluster-Master/"><small>다음 · 05 분산 컴퓨팅 →</small><b>Cluster-Master</b></a>
+  </nav>
+</div></section>
+
+<!-- 용어 풀이 · 자주 묻는 질문 -->
+<section class="sec soft"><div class="wrap pd-anchor" id="terms">
+  <div class="sec-h"><div><span class="kicker">Glossary</span><h2>처음 보는 말,<br>쉽게 풀어 드립니다</h2></div><p>이 화면에 나오는 용어를 전공자가 아니어도 읽을 수 있게 정리했습니다.</p></div>
+  <dl class="pd-terms">
+    <div><dt>AI 에이전트<small>AI Agent</small></dt><dd>정해 준 역할과 목표 안에서 스스로 판단해 일을 수행하는 AI 프로그램입니다.</dd></div>
+    <div><dt>프레임워크<small>Agent Framework</small></dt><dd>에이전트를 만들 때 쓰는 개발 도구 묶음입니다. 만든 곳마다 설계 방식이 달라 잘하는 일과 쓰는 법이 다릅니다.</dd></div>
+    <div><dt>오케스트레이션<small>Orchestration</small></dt><dd>여러 에이전트에게 일을 나눠 주고, 순서를 맞추고, 결과를 모으는 일입니다.</dd></div>
+    <div><dt>어댑터<small>Adapter</small></dt><dd>모양이 다른 플러그를 같은 콘센트에 꽂게 해 주는 변환 부품입니다. NexusAI의 어댑터는 서로 다른 프레임워크를 같은 화면과 같은 입력 항목으로 쓰게 해 줍니다.</dd></div>
+    <div><dt>워크플로<small>Workflow</small></dt><dd>일을 처리하는 순서를 정해 둔 작업 흐름입니다. 어떤 작업이 먼저 끝나야 다음 작업을 시작할 수 있는지가 담깁니다.</dd></div>
+    <div><dt>LLM<small>Large Language Model · 대규모 언어 모델</small></dt><dd>글을 이해하고 만들어 내는 AI 모델입니다. 에이전트의 판단과 글쓰기를 맡습니다.</dd></div>
+    <div><dt>클라우드 모델 · API 키<small>Cloud model · API key</small></dt><dd>모델 제공사의 서버에서 돌아가는 모델을 인터넷으로 불러 쓰는 방식입니다. API 키는 그 서비스를 쓸 자격을 증명하는 비밀 열쇠입니다. 입력 내용은 제공사로 전송됩니다.</dd></div>
+    <div><dt>로컬 모델<small>Local LLM · vLLM · Ollama</small></dt><dd>회사 안의 장비에 설치해 쓰는 모델입니다. 입력 내용이 회사 밖으로 나가지 않습니다. vLLM과 Ollama는 이런 모델을 구동하는 프로그램입니다.</dd></div>
+    <div><dt>도구 호출<small>Tool use</small></dt><dd>모델이 답을 만드는 도중에 계산이나 조회 같은 외부 기능을 불러 쓰는 것입니다.</dd></div>
+    <div><dt>토큰<small>Token</small></dt><dd>모델이 글의 양을 세는 단위입니다. 클라우드 모델의 사용량은 보통 토큰 수로 계산됩니다.</dd></div>
+    <div><dt>대체 실행<small>Fallback</small></dt><dd>먼저 시도한 방식이 준비되지 않았을 때 다음 방식으로 넘어가는 것입니다. 실제로 어떤 방식으로 처리되었는지 확인할 필요가 생깁니다.</dd></div>
+    <div><dt>모델 검사<small>Model checking</small></dt><dd>프로그램의 동작을 수학적 모델로 옮겨, 일어날 수 있는 순서를 정해진 범위 안에서 모두 따져 보는 검증 방법입니다.</dd></div>
+  </dl>
+  <h3 class="pd-faq-h">자주 묻는 질문</h3>
+  <div class="pd-faq">
+    <details><summary>우리 자료가 회사 밖으로 나갑니까?</summary><p>어떤 기능을 쓰느냐에 따라 다릅니다. 프레임워크 어댑터와 협업 워크플로는 Anthropic, OpenAI, Google의 클라우드 모델을 쓰므로 입력한 내용이 해당 제공사로 전송됩니다. 사내 장비에서만 처리하려면 프레임워크 없이 「직접 실행」 방식에서 로컬 모델(Ollama)을 고르거나, 로컬 채팅을 씁니다. 부서 스킬은 로컬 모델을 먼저 쓰지만, 로컬 모델이 응답하지 않고 클라우드 API 키가 등록되어 있으면 클라우드로 넘어갑니다. 밖으로 나가면 안 되는 자료를 다룬다면 클라우드 API 키를 등록하지 않는 구성을 권합니다.</p></details>
+    <details><summary>프레임워크 10종이 모두 바로 동작합니까?</summary><p>10종 모두 연결 부품은 들어 있습니다. 다만 실제로 그 프레임워크로 실행되려면 해당 프레임워크가 서버에 설치되어 있고 필요한 API 키가 등록되어 있어야 합니다. 조건이 맞지 않으면 프레임워크를 거치지 않는 「직접 실행」으로 대체됩니다. 도입할 때 쓰려는 프레임워크를 정하고 설치 상태를 확인하시기를 권합니다.</p></details>
+    <details><summary>사람은 무엇을 해야 합니까?</summary><p>세 가지입니다. 맡길 일을 분명하게 적는 일, 실행 전에 계획을 확인하는 일, 그리고 결과를 검토해 확정하는 일입니다. 서버 명령 실행처럼 영향이 큰 작업은 승인 단계에서 사람이 결정합니다.</p></details>
+    <details><summary>AI가 틀리면 어떻게 됩니까?</summary><p>결과는 초안으로 다루어야 합니다. 검토 역할의 에이전트가 한 번 살펴보지만, 그것도 AI의 판단입니다. 조사 기능이 제시하는 출처와 수치에는 AI가 만들어 낸 것이 섞일 수 있고, 결과에 그 사실이 표기됩니다. 사실 관계와 수치는 담당자가 원자료와 대조해야 합니다. 실행이 실패한 경우에는 성공으로 표시하지 않고 오류 내용을 남깁니다.</p></details>
+    <details><summary>Google Workspace를 연결하면 무엇을 주의해야 합니까?</summary><p>연결하면 메일, 일정, 문서의 내용이 Google의 서비스와 오갑니다. 또 서버에 인증해 둔 Google 계정 하나로 모든 사용자의 요청이 처리됩니다. 로그인한 사람은 누구나 그 계정의 권한으로 메일을 읽고 보낼 수 있다는 뜻입니다. 개인 계정이 아닌 업무용 공용 계정을 쓰고, NexusAI 사용자 범위를 그 계정을 써도 되는 사람으로 제한하시기를 권합니다.</p></details>
+    <details><summary>지금 쓰는 시스템을 바꿔야 합니까? 무엇을 준비합니까?</summary><p>기존 시스템을 바꾸지 않습니다. NexusAI는 따로 설치해 웹 화면으로 씁니다. 준비할 것은 사용할 모델의 결정(클라우드 API 키 또는 로컬 모델을 구동할 GPU 서버), 사용할 프레임워크의 설치, 그리고 운영 환경 설정입니다. 로그인과 권한 검사는 운영 모드로 설정해야 모든 기능에 적용되므로 설치 후 반드시 확인합니다.</p></details>
+    <details><summary>NexusAI는 무엇을 보증하고, 무엇은 보증하지 않습니까?</summary><p>보증하는 것은 표시의 정직함입니다. 연결되지 않은 기능을 동작하는 것처럼 보이지 않고, 예시 데이터에는 예시라고 표시하며, 실패는 실패로 남깁니다. 협업 워크플로에서 같은 작업이 중복 실행되지 않는다는 점은 정해진 범위 안에서 모델 검사로 확인했습니다. AI가 낸 결과의 정확성과 클라우드 모델 제공사의 데이터 처리 방식은 보증하지 않습니다.</p></details>
+  </div>
+</div></section>
+
+<!-- 도입 문의 (기존 화면과 같은 부품) -->
+<section class="sec s"><div class="wrap"><div class="cta pd-anchor" id="contact"><div><h2>어떤 일을 AI 에이전트에게 맡겨 볼까요?</h2><p>맡길 업무와 다루는 자료의 민감도에 맞춰 프레임워크, 모델, 연결 범위를 함께 정해 드립니다.</p><div class="actions" style="margin-top:34px"><a class="pill white" href="mailto:hello@a3sc.co.kr">hello@a3sc.co.kr <span class="ar">→</span></a></div></div><div class="num">대표전화<b>02-6952-2511</b></div></div></div></section>
+
+<script>/* 서브 메뉴: 보고 있는 구역을 표시 */(function(){var nav=document.getElementById('pd-subnav');if(!nav||!('IntersectionObserver' in window))return;var as=nav.querySelectorAll('a'),map={};
+for(var i=0;i<as.length;i++){var el=document.getElementById(as[i].getAttribute('href').slice(1));if(el)map[el.id]=as[i]}
+var io=new IntersectionObserver(function(es){for(var i=0;i<es.length;i++)if(es[i].isIntersecting){for(var j=0;j<as.length;j++)as[j].className='';map[es[i].target.id].className='on'}},{rootMargin:'-30% 0px -60% 0px'});
+for(var id in map)io.observe(document.getElementById(id))})()</script>
+</main>
+
+
+
+
+
+<footer class="gf"><div class="wrap">
+  <div class="top"><div><img src="resources/images/A3/renewal/img/foot_logo.png" alt="A3 SECURITY"><p>1999년 국내 최초의 정보보안 컨설팅 기업. 이제 보안을 아는 AI를 만듭니다.</p></div>
+  <div><h5>회사소개</h5><ul><li><a href="https://www.a3sc.co.kr/a3sc/ISMA3SC002M1.do">회사개요</a></li><li><a href="https://www.a3sc.co.kr/a3sc/ISMA3SC002M2.do">CEO 인사말</a></li><li><a href="https://www.a3sc.co.kr/a3sc/ISMA3SC002M3.do">연혁</a></li><li><a href="https://www.a3sc.co.kr/a3sc/ISMA3SC002M4.do">인재상</a></li><li><a href="https://www.a3sc.co.kr/a3sc/ISMA3SC002M5.do">찾아오시는 길</a></li></ul></div>
+  <div><h5>AI 플랫폼</h5><ul><li><a href="../">개요</a></li><li><a href="../#lineup">플랫폼 6종</a></li><li><a href="https://wdlab1958.github.io/a3sc/">One Cycle Framework</a></li><li class="fam-off"><a>A3 AI 포털 ↗</a></li></ul></div>
+  <div><h5>보안 서비스</h5><ul><li><a href="https://www.a3sc.co.kr/a3sc/ISMA3SC003M1.do">보안컨설팅</a></li><li><a href="https://www.a3sc.co.kr/a3sc/ISMA3SC003M2.do">보안관제</a></li><li><a href="https://www.a3sc.co.kr/a3sc/ISMA3SC003M3.do">보안솔루션</a></li></ul></div>
+  <div><h5>정보센터</h5><ul><li><a href="https://www.a3sc.co.kr/a3sc/ISMA3SC004M1.do?brdType=N">공지사항</a></li><li><a href="https://www.a3sc.co.kr/a3sc/ISMA3SC004M1.do?brdType=C">뉴스클리핑</a></li><li><a href="https://www.a3sc.co.kr/a3sc/ISMA3SC004M1.do?brdType=T">보안동향</a></li><li><a href="https://www.a3sc.co.kr/a3sc/ISMA3SC004M1.do?brdType=R">보안권고</a></li><li><a href="https://www.a3sc.co.kr/a3sc/ISMA3SC005M1.do">사이트맵</a></li></ul></div></div>
+  <div class="mid"><div class="fnb"><ul class="links"><li><a href="https://www.a3sc.co.kr/a3sc/ISMA3SC002M1.do">회사소개</a></li><li><a href="https://www.a3sc.co.kr/a3sc/ISMA3SC005M2.do" class="em">개인정보처리방침</a></li><li><a href="https://www.a3sc.co.kr/a3sc/ISMA3SC002M5.do">오시는길</a></li><li><a href="https://www.a3sc.co.kr/a3sc/ISMA3SC005M1.do">사이트맵</a></li></ul>
+  <details class="family fam-off"><summary>패밀리 사이트</summary><ul><li><a>A3 AiNex &amp; AgentForge</a></li><li><a>AIALBM</a></li><li><a>AiNex</a></li><li><a>AI Cluster Master</a></li><li><a>ADE</a></li><li><a>AEGIS</a></li><li><a>AgentForge</a></li><li><a>AIMES</a></li><li><a>AIMES Eleven</a></li><li><a>Nexus AI</a></li><li><a>TruthLens</a></li></ul></details></div>
+  <ul class="sns"><li class="blog"><a href="https://blog.naver.com/a3security" target="_blank" rel="noopener" aria-label="네이버 블로그"><img src="resources/images/A3/renewal/img/sns/foot_blog.png" alt=""></a></li><li class="facebook"><a href="https://www.facebook.com/hello.a3" target="_blank" rel="noopener" aria-label="페이스북"><img src="resources/images/A3/renewal/img/sns/foot_facebook.png" alt=""></a></li><li class="twitter"><a href="https://twitter.com/a3security_info" target="_blank" rel="noopener" aria-label="트위터"><img src="resources/images/A3/renewal/img/sns/foot_twitter.png" alt=""></a></li></ul></div>
+  <div class="bot"><div><span>(주)에이쓰리시큐리티</span><span>대표자 한재호</span><span>사업자등록번호 172-81-00570</span><span>통신판매신고번호 제2011-서울금천-0931호</span><br><span>07281 서울 영등포구 선유로9길 10, 문래 SK V1 center 1710-11호</span><span>02-6952-2511</span><span>hello@a3sc.co.kr</span></div>
+  <div>© A3SECURITY. ALL RIGHTS RESERVED.</div></div>
+  </div></footer><script>/* 패밀리 사이트: 바깥을 누르면 닫는다 */document.addEventListener('click',e=>{const f=document.querySelector('.gf .family');if(f&&f.open&&!f.contains(e.target))f.open=false})</script>
+
+</body>
+</html>

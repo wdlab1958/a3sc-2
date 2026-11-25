@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+<meta name="description" content="Local LLM 기반 폐쇄망 AI와 멀티 에이전트로 데이터를 지키며 업무를 자동화하는 에이쓰리시큐리티의 AI 플랫폼 6종을 소개합니다.">
+<meta name="keywords" content="소프트웨어,서비스,시스템,보안,유통,컨설팅">
+<meta name="Classification" content="보안컨설팅 및 서비스 소프트웨어 개발,유통 및 판매 외">
+<meta property="og:type" content="website">
+<meta property="og:title" content="AI 플랫폼 | 에이쓰리시큐리티">
+<meta property="og:site_name" content="에이쓰리시큐리티">
+<meta property="og:image" content="resources/images/A3/img/A3_favicon.png">
+<meta property="og:description" content="Local LLM 기반 폐쇄망 AI와 멀티 에이전트로 데이터를 지키며 업무를 자동화하는 에이쓰리시큐리티의 AI 플랫폼 6종을 소개합니다.">
+
+<meta property="og:url" content="https://www.a3sc.co.kr/a3sc/ISMA3SC003M4.do">
+<meta property="al:web:url" content="https://www.a3sc.co.kr">
+<meta name="robots" content="noindex,nofollow" />
+<link rel="shortcut icon" href="resources/images/A3/img/A3_favicon.png" />
+<link rel="icon" href="resources/images/A3/img/A3_favicon.png" />
+<title>AI 플랫폼 | 에이쓰리시큐리티</title>
+
+<style>@font-face{font-family:'Pretendard Variable';src:url(resources/font/renewal/PretendardVariable.woff2) format('woff2-variations');font-weight:45 920;font-style:normal;font-display:swap}</style>
+<link rel="stylesheet" href="resources/css/A3/renewal/b.css">
+<link rel="stylesheet" href="resources/css/A3/renewal/onecycle_product.css">
+<link rel="stylesheet" href="resources/css/A3/renewal/aiplatform.css">
+
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+
+<header class="gh"><div class="wrap"><a class="logo" href="https://www.a3sc.co.kr/a3sc/ISMA3SC001M1.do"><img class="on-dark" src="resources/images/A3/renewal/img/foot_logo.png" alt="A3 SECURITY"><img class="on-light" src="resources/images/A3/renewal/img/logo.png" alt="A3 SECURITY"></a>
+  <nav><a href="https://www.a3sc.co.kr/a3sc/ISMA3SC002M1.do" class="">회사소개</a><a href="./" class="on">AI 플랫폼</a><a href="https://www.a3sc.co.kr/a3sc/ISMA3SC003M1.do" class="">보안 서비스</a><a href="https://www.a3sc.co.kr/a3sc/ISMA3SC004M1.do?brdType=N" class="">정보센터</a><a href="https://wdlab1958.github.io/a3sc/" class="">One Cycle Dev. Framework</a></nav>
+  <a class="pill red hcta" href="#contact">문의하기</a><span class="brand"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-41 -41 16347 1438" role="img" aria-label="AI &amp; SECURITY"><path fill="currentColor" stroke="currentColor" stroke-width="41" stroke-linejoin="round" d="M937 902H412L320 1116Q286 1195 286 1234Q286 1265 315.5 1288.5Q345 1312 443 1319V1356H16V1319Q101 1304 126 1280Q177 1232 239 1085L716 -31H751L1223 1097Q1280 1233 1326.5 1273.5Q1373 1314 1456 1319V1356H921V1319Q1002 1315 1030.5 1292.0Q1059 1269 1059 1236Q1059 1192 1019 1097ZM909 828 679 280 443 828ZM2233.88 1319V1356H1652.88V1319H1700.88Q1784.88 1319 1822.88 1270Q1846.88 1238 1846.88 1116V240Q1846.88 137 1833.88 104Q1823.88 79 1792.88 61Q1748.88 37 1700.88 37H1652.88V0H2233.88V37H2184.88Q2101.88 37 2063.88 86Q2038.88 118 2038.88 240V1116Q2038.88 1219 2051.88 1252Q2061.88 1277 2093.88 1295Q2136.88 1319 2184.88 1319ZM4086.6400000000003 483H4506.64V520Q4419.64 527 4378.14 558.5Q4336.64 590 4248.64 749.0Q4160.64 908 4050.6400000000003 1046Q4139.64 1150 4209.64 1191.5Q4279.64 1233 4350.64 1233Q4419.64 1233 4467.64 1195.5Q4515.64 1158 4535.64 1085L4572.64 1112Q4535.64 1253 4453.64 1320.0Q4371.64 1387 4262.64 1387Q4180.64 1387 4096.14 1342.5Q4011.6400000000003 1298 3911.6400000000003 1192Q3787.6400000000003 1302 3688.1400000000003 1344.5Q3588.6400000000003 1387 3475.6400000000003 1387Q3310.6400000000003 1387 3213.6400000000003 1299.0Q3116.6400000000003 1211 3116.6400000000003 1089Q3116.6400000000003 968 3203.6400000000003 847.5Q3290.6400000000003 727 3530.6400000000003 598Q3483.6400000000003 494 3466.6400000000003 427.5Q3449.6400000000003 361 3449.6400000000003 300Q3449.6400000000003 129 3575.6400000000003 39Q3673.6400000000003 -31 3798.6400000000003 -31Q3917.6400000000003 -31 3992.6400000000003 39.5Q4067.6400000000003 110 4067.6400000000003 213Q4067.6400000000003 319 3995.1400000000003 399.0Q3922.6400000000003 479 3738.6400000000003 574Q3865.6400000000003 800 4003.6400000000003 988Q4179.64 778 4179.64 634Q4179.64 588 4149.64 552Q4127.64 525 4086.6400000000003 520ZM3704.6400000000003 509Q3828.6400000000003 450 3890.1400000000003 375.0Q3951.6400000000003 300 3951.6400000000003 208Q3951.6400000000003 136 3907.1400000000003 89.0Q3862.6400000000003 42 3796.6400000000003 42Q3709.6400000000003 42 3665.1400000000003 102.5Q3620.6400000000003 163 3620.6400000000003 221Q3620.6400000000003 270 3637.6400000000003 330.5Q3654.6400000000003 391 3704.6400000000003 509ZM3859.6400000000003 1134Q3727.6400000000003 954 3676.6400000000003 871.0Q3625.6400000000003 788 3564.6400000000003 665Q3444.6400000000003 734 3384.1400000000003 817.0Q3323.6400000000003 900 3323.6400000000003 997Q3323.6400000000003 1104 3392.6400000000003 1185.0Q3461.6400000000003 1266 3578.6400000000003 1266Q3641.6400000000003 1266 3700.1400000000003 1241.0Q3758.6400000000003 1216 3859.6400000000003 1134ZM6331.400000000001 -31V438H6294.400000000001Q6276.400000000001 303 6229.900000000001 223.0Q6183.400000000001 143 6097.400000000001 96.0Q6011.400000000001 49 5919.400000000001 49Q5815.400000000001 49 5747.400000000001 112.5Q5679.400000000001 176 5679.400000000001 257Q5679.400000000001 319 5722.400000000001 370Q5784.400000000001 445 6017.400000000001 570Q6207.400000000001 672 6276.900000000001 726.5Q6346.400000000001 781 6383.900000000001 855.0Q6421.400000000001 929 6421.400000000001 1010Q6421.400000000001 1164 6301.900000000001 1275.5Q6182.400000000001 1387 5994.400000000001 1387Q5935.400000000001 1387 5883.400000000001 1378Q5852.400000000001 1373 5754.900000000001 1341.5Q5657.400000000001 1310 5631.400000000001 1310Q5606.400000000001 1310 5591.900000000001 1325.0Q5577.400000000001 1340 5570.400000000001 1387H5533.400000000001V922H5570.400000000001Q5596.400000000001 1068 5640.400000000001 1140.5Q5684.400000000001 1213 5774.900000000001 1261.0Q5865.400000000001 1309 5973.400000000001 1309Q6098.400000000001 1309 6170.900000000001 1243.0Q6243.400000000001 1177 6243.400000000001 1087Q6243.400000000001 1037 6215.900000000001 986.0Q6188.400000000001 935 6130.400000000001 891Q6091.400000000001 861 5917.400000000001 763.5Q5743.400000000001 666 5669.900000000001 608.0Q5596.400000000001 550 5558.400000000001 480.0Q5520.400000000001 410 5520.400000000001 326Q5520.400000000001 180 5632.400000000001 74.5Q5744.400000000001 -31 5917.400000000001 -31Q6025.400000000001 -31 6146.400000000001 22Q6202.400000000001 47 6225.400000000001 47Q6251.400000000001 47 6267.900000000001 31.5Q6284.400000000001 16 6294.400000000001 -31ZM7082.280000000001 74V610H7380.280000000001Q7496.280000000001 610 7535.280000000001 575Q7587.280000000001 529 7593.280000000001 413H7630.280000000001V885H7593.280000000001Q7579.280000000001 786 7565.280000000001 758Q7547.280000000001 723 7506.280000000001 703.0Q7465.280000000001 683 7380.280000000001 683H7082.280000000001V1130Q7082.280000000001 1220 7090.280000000001 1239.5Q7098.280000000001 1259 7118.280000000001 1270.5Q7138.280000000001 1282 7194.280000000001 1282H7424.280000000001Q7539.280000000001 1282 7591.280000000001 1266.0Q7643.280000000001 1250 7691.280000000001 1203Q7753.280000000001 1141 7818.280000000001 1016H7858.280000000001L7741.280000000001 1356H6696.280000000001V1319H6744.280000000001Q6792.280000000001 1319 6835.280000000001 1296Q6867.280000000001 1280 6878.780000000001 1248.0Q6890.280000000001 1216 6890.280000000001 1117V236Q6890.280000000001 107 6864.280000000001 77Q6828.280000000001 37 6744.280000000001 37H6696.280000000001V0H7741.280000000001L7756.280000000001 297H7717.280000000001Q7696.280000000001 190 7670.780000000001 150.0Q7645.280000000001 110 7595.280000000001 89Q7555.280000000001 74 7454.280000000001 74ZM9261.16 -31 9292.16 430H9261.16Q9199.16 223 9084.16 132.0Q8969.16 41 8808.16 41Q8673.16 41 8564.16 109.5Q8455.16 178 8392.66 328.0Q8330.16 478 8330.16 701Q8330.16 885 8389.16 1020.0Q8448.16 1155 8566.66 1227.0Q8685.16 1299 8837.16 1299Q8969.16 1299 9070.16 1242.5Q9171.16 1186 9292.16 1018L9323.16 1038Q9221.16 1219 9085.16 1303.0Q8949.16 1387 8762.16 1387Q8425.16 1387 8240.16 1137Q8102.160000000001 951 8102.160000000001 699Q8102.160000000001 496 8193.16 326.0Q8284.16 156 8443.66 62.5Q8603.16 -31 8792.16 -31Q8939.16 -31 9082.16 41Q9124.16 63 9142.16 63Q9169.16 63 9189.16 44Q9215.16 17 9226.16 -31ZM10494.04 37V0H10974.04V37H10923.04Q10843.04 37 10800.04 104Q10779.04 135 10779.04 248V798Q10779.04 1002 10738.54 1114.5Q10698.04 1227 10579.54 1307.5Q10461.04 1388 10257.04 1388Q10035.04 1388 9920.04 1311.0Q9805.04 1234 9757.04 1104Q9725.04 1015 9725.04 770V240Q9725.04 115 9690.54 76.0Q9656.04 37 9579.04 37H9528.04V0H10114.04V37H10062.04Q9978.04 37 9942.04 90Q9917.04 126 9917.04 240V831Q9917.04 910 9931.54 1012.0Q9946.04 1114 9984.04 1171.0Q10022.04 1228 10093.54 1265.0Q10165.04 1302 10269.04 1302Q10402.04 1302 10507.04 1244.0Q10612.04 1186 10650.54 1095.5Q10689.04 1005 10689.04 789V240Q10689.04 113 10661.04 81Q10622.04 37 10545.04 37ZM12502.920000000002 1356H12140.920000000002L11681.920000000002 722Q11630.920000000002 724 11598.920000000002 724Q11585.920000000002 724 11570.920000000002 723.5Q11555.920000000002 723 11539.920000000002 722V1116Q11539.920000000002 1244 11567.920000000002 1275Q11605.920000000002 1319 11681.920000000002 1319H11734.920000000002V1356H11153.920000000002V1319H11204.920000000002Q11290.920000000002 1319 11327.920000000002 1263Q11348.920000000002 1232 11348.920000000002 1116V240Q11348.920000000002 112 11320.920000000002 81Q11281.920000000002 37 11204.920000000002 37H11153.920000000002V0H11647.920000000002Q11863.920000000002 0 11966.420000000002 31.5Q12068.920000000002 63 12140.420000000002 147.5Q12211.920000000002 232 12211.920000000002 349Q12211.920000000002 474 12130.420000000002 566.0Q12048.920000000002 658 11877.920000000002 696L12157.920000000002 1085Q12253.920000000002 1219 12322.920000000002 1263.0Q12391.920000000002 1307 12502.920000000002 1319ZM11539.920000000002 659Q11558.920000000002 659 11572.920000000002 659.5Q11586.920000000002 660 11595.920000000002 660Q11789.920000000002 660 11888.420000000002 576.0Q11986.920000000002 492 11986.920000000002 362Q11986.920000000002 235 11907.420000000002 155.5Q11827.920000000002 76 11696.920000000002 76Q11638.920000000002 76 11539.920000000002 95ZM13239.800000000003 1319V1356H12658.800000000003V1319H12706.800000000003Q12790.800000000003 1319 12828.800000000003 1270Q12852.800000000003 1238 12852.800000000003 1116V240Q12852.800000000003 137 12839.800000000003 104Q12829.800000000003 79 12798.800000000003 61Q12754.800000000003 37 12706.800000000003 37H12658.800000000003V0H13239.800000000003V37H13190.800000000003Q13107.800000000003 37 13069.800000000003 86Q13044.800000000003 118 13044.800000000003 240V1116Q13044.800000000003 1219 13057.800000000003 1252Q13067.800000000003 1277 13099.800000000003 1295Q13142.800000000003 1319 13190.800000000003 1319ZM14597.680000000002 0 14612.680000000002 318H14574.680000000002Q14563.680000000002 234 14544.680000000002 198Q14513.680000000002 140 14462.180000000002 112.5Q14410.680000000002 85 14326.680000000002 85H14135.680000000002V1121Q14135.680000000002 1246 14162.680000000002 1277Q14200.680000000002 1319 14279.680000000002 1319H14326.680000000002V1356H13751.680000000002V1319H13799.680000000002Q13885.680000000002 1319 13921.680000000002 1267Q13943.680000000002 1235 13943.680000000002 1121V85H13780.680000000002Q13685.680000000002 85 13645.680000000002 99Q13593.680000000002 118 13556.680000000002 172.0Q13519.680000000002 226 13512.680000000002 318H13474.680000000002L13490.680000000002 0ZM15762.560000000001 0H16235.560000000001V37H16209.560000000001Q16183.560000000001 37 16133.560000000001 60.0Q16083.560000000001 83 16042.560000000001 126.0Q16001.560000000001 169 15941.560000000001 266L15614.560000000001 781V1121Q15614.560000000001 1246 15642.560000000001 1277Q15680.560000000001 1319 15762.560000000001 1319H15806.560000000001V1356H15230.560000000001V1319H15278.560000000001Q15364.560000000001 1319 15400.560000000001 1267Q15422.560000000001 1235 15422.560000000001 1121V800L15050.560000000001 232Q14984.560000000001 132 14961.060000000001 107.0Q14937.560000000001 82 14863.560000000001 47Q14843.560000000001 37 14805.560000000001 37V0H15385.560000000001V37H15355.560000000001Q15308.560000000001 37 15269.060000000001 59.0Q15229.560000000001 81 15229.560000000001 125Q15229.560000000001 161 15290.560000000001 255L15573.560000000001 692L15839.560000000001 274Q15899.560000000001 180 15899.560000000001 134Q15899.560000000001 106 15885.060000000001 84.0Q15870.560000000001 62 15843.560000000001 49.5Q15816.560000000001 37 15762.560000000001 37Z"/></svg></span>
+  <button type="button" class="menu" aria-label="전체 메뉴" aria-expanded="false" aria-controls="mnav"></button></div>
+  <nav class="mnav" id="mnav" aria-label="전체 메뉴" hidden><div class="wrap"><div class="grp"><a class="h" href="https://www.a3sc.co.kr/a3sc/ISMA3SC002M1.do">회사소개</a><ul><li><a href="https://www.a3sc.co.kr/a3sc/ISMA3SC002M1.do">회사개요</a></li><li><a href="https://www.a3sc.co.kr/a3sc/ISMA3SC002M2.do">CEO 인사말</a></li><li><a href="https://www.a3sc.co.kr/a3sc/ISMA3SC002M3.do">연혁</a></li><li><a href="https://www.a3sc.co.kr/a3sc/ISMA3SC002M4.do">인재상</a></li><li><a href="https://www.a3sc.co.kr/a3sc/ISMA3SC002M5.do">찾아오시는 길</a></li><li><a href="https://www.saramin.co.kr/zf_user/company-info/view-inner-recruit?csn=ZU9zdmxNSTZCU0ViN1NJRC9NOGtPUT09" target="_blank" rel="noopener">채용공고 ↗</a></li></ul></div><div class="grp on"><a class="h" href="./">AI 플랫폼</a><ul><li><a href="./#intro">개요</a></li><li><a href="./#strength">강점</a></li><li><a href="./#lineup">플랫폼 6종</a></li><li><a href="https://wdlab1958.github.io/a3sc/">One Cycle Framework</a></li><li><a href="./#contact">도입 문의</a></li></ul></div><div class="grp"><a class="h" href="https://www.a3sc.co.kr/a3sc/ISMA3SC003M1.do">보안 서비스</a><ul><li><a href="https://www.a3sc.co.kr/a3sc/ISMA3SC003M1.do">보안컨설팅</a></li><li><a href="https://www.a3sc.co.kr/a3sc/ISMA3SC003M2.do">보안관제</a></li><li><a href="https://www.a3sc.co.kr/a3sc/ISMA3SC003M3.do">보안솔루션</a></li></ul></div><div class="grp"><a class="h" href="https://www.a3sc.co.kr/a3sc/ISMA3SC004M1.do?brdType=N">정보센터</a><ul><li><a href="https://www.a3sc.co.kr/a3sc/ISMA3SC004M1.do?brdType=N">공지사항</a></li><li><a href="https://www.a3sc.co.kr/a3sc/ISMA3SC004M1.do?brdType=C">뉴스클리핑</a></li><li><a href="https://www.a3sc.co.kr/a3sc/ISMA3SC004M1.do?brdType=T">보안동향</a></li><li><a href="https://www.a3sc.co.kr/a3sc/ISMA3SC004M1.do?brdType=R">보안권고</a></li></ul></div>
+  <a class="pill red" href="#contact">문의하기</a></div></nav>
+<script>/* 모바일 전체 메뉴 열고 닫기 */(function(){var b=document.querySelector('.gh .menu'),m=document.getElementById('mnav');if(!b||!m)return;function set(o){m.hidden=!o;b.setAttribute('aria-expanded',o);document.documentElement.classList.toggle('mnav-open',o)}b.addEventListener('click',function(){set(m.hidden)});m.addEventListener('click',function(e){if(e.target.closest('a'))set(false)});document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!m.hidden){set(false);b.focus()}});matchMedia('(min-width:761px)').addEventListener('change',function(e){if(e.matches)set(false)})})()</script></header>
+
+<main>
+<!-- =========================================================
+     AI 플랫폼 · 본문 (기존 레이아웃의 <main> … </main> 안에 넣는 부분)
+     기존 ISMA3SC003M4 화면의 「플랫폼 9종」을 6종으로 바꾸고, 카드마다 상세 화면(ISMA3SC003M11~M16)으로 연결한다.
+     필요한 것: b.css 다음에 /resources/css/A3/renewal/onecycle_product.css, /resources/css/A3/renewal/aiplatform.css
+     ========================================================= -->
+<section class="hero" style="background-image:url(resources/images/A3/renewal/img/ai_subvisual.jpg)" id="top"><div class="wrap">
+    <span class="kicker">AI Platform</span>
+    <h1>데이터는 지키고,<br>업무는 <em>AI</em>에게</h1>
+    <p class="lede">사내에 설치해 쓰는 Local LLM과 멀티 에이전트로 업무를 자동화합니다. 데이터가 어디에 머무는지는 플랫폼마다 구분해 밝힙니다.</p>
+    <nav class="subnav" id="ap-subnav"><a href="#intro" class="on">개요</a><a href="#strength">강점</a><a href="#lineup">플랫폼 6종</a><a href="#choose">고르는 법</a><a href="#onecycle">One Cycle</a><a href="#contact">도입 문의</a></nav></div></section>
+
+<!-- 개요 -->
+<section class="sec"><div class="wrap intro ap-anchor" id="intro"><div><span class="kicker">Overview</span><h2>기업의 <em>데이터를 지키며</em><br>업무를 자동화하는 AI 전환</h2></div>
+    <div class="prose"><p class="big">AI 활용이 본격화되면서 기업의 핵심 데이터가 외부 AI 서비스로 유출될 수 있다는 새로운 위험이 대두되었습니다.</p>
+    <p>에이쓰리시큐리티는 Local LLM 기반 폐쇄망 AI 플랫폼을 구축해 데이터 주권을 지키면서 업무 생산성을 확보하는 데 주력하고 있습니다. 20년간 축적한 보안 컨설팅·관제 노하우와 결합한 멀티 에이전트 기술로 산업별 AI 전환 시장을 개척하고 있습니다.</p>
+    <p>지금은 여섯 가지 플랫폼에 집중합니다. 공장, 사무실, 교육 현장처럼 쓰이는 곳이 분명한 것만 골랐고, 플랫폼마다 무엇을 넣으면 무엇이 나오는지 쉬운 말로 풀어 둔 상세 화면을 마련했습니다.</p></div></div></section>
+
+<!-- 강점 -->
+<section class="sec soft"><div class="wrap ap-anchor" id="strength"><div class="sec-h"><div><span class="kicker">Strengths</span><h2>보안 회사가 만든 AI의 차이</h2></div></div><div class="bento">
+    <div class="tile c7" style="background-image:url(resources/images/A3/renewal/img/ai_st1.jpg)"><h3>데이터 주권을 지키는 폐쇄망 AI</h3><p>Local LLM(Ollama·vLLM) 온프레미스 구축. 외부 서비스와 오가는 기능은 따로 구분해 표시</p></div><div class="tile c5" style="background-image:url(resources/images/A3/renewal/img/ai_st2.jpg)"><h3>협업하는 멀티 에이전트</h3><p>기획·조사·분석·실행·검토로 역할을 나누는 협업, 에이전트 프레임워크 10종 연결</p></div><div class="tile c5" style="background-image:url(resources/images/A3/renewal/img/ai_st3.jpg)"><h3>사람이 승인하는 보안 설계</h3><p>위험한 명령의 단계별 승인, 실행 이력과 감사 기록</p></div><div class="tile c7" style="background-image:url(resources/images/A3/renewal/img/ai_st4.jpg)"><h3>검증하고 한계를 밝히는 운영</h3><p>여섯 플랫폼 모두 모델 검사로 결함을 찾아 기록하고, 보증 범위와 한계를 상세 화면에 공개</p></div></div></div></section>
+
+<!-- 플랫폼 6종 -->
+<section class="sec dark"><div class="wrap ap-anchor" id="lineup"><div class="sec-h"><div><span class="kicker">Lineup</span><h2>6종의 AI 플랫폼</h2></div><p>제조 현장부터 사무 업무, AI 인프라, 사람의 소통 훈련까지. 카드의 「자세히 보기」에서 플랫폼별 상세 화면으로 이어집니다.</p></div>
+  <div class="ap-grid">
+    <article class="ap-card"><span class="no">01</span><span class="cat">산업 특화 · AI 제조실행시스템(MES)</span><h3>AIMES</h3>
+      <p>생산·품질·위생 기록을 한 화면에 모으고 AI가 이상 조짐을 알립니다.</p>
+      <ul><li>HACCP 관리 지점 감시와 이탈 경고</li><li>원재료에서 완제품까지 LOT 추적</li><li>공장 안 로컬 AI의 예측과 보고서</li></ul>
+      <a class="ap-more" href="./AIMES/" aria-label="AIMES 자세히 보기">자세히 보기 <span class="ar">→</span></a></article>
+    <article class="ap-card"><span class="no">02</span><span class="cat">AI 신뢰 · 딥페이크 탐지</span><h3>TruthLens</h3>
+      <p>영상·이미지·음성의 조작 가능성을 근거와 함께 판정합니다.</p>
+      <ul><li>여섯 갈래 교차 분석과 5단계 판정</li><li>근거가 부족하면 「판단 보류」</li><li>AI 모델은 조직 내부 서버에서 구동</li></ul>
+      <a class="ap-more" href="./TruthLens/" aria-label="TruthLens 자세히 보기">자세히 보기 <span class="ar">→</span></a></article>
+    <article class="ap-card"><span class="no">03</span><span class="cat">업무 자동화 · 로컬 LLM</span><h3>A3 AutoFlow</h3>
+      <p>반복되는 부서 업무의 초안을 사내 AI가 먼저 씁니다.</p>
+      <ul><li>19개 부서, 67개 업무 스킬</li><li>워크플로 예약 실행과 이력 기록</li><li>초안 작성은 사내 언어 모델로</li></ul>
+      <a class="ap-more" href="./A3-AutoFlow/" aria-label="A3 AutoFlow 자세히 보기">자세히 보기 <span class="ar">→</span></a></article>
+    <article class="ap-card"><span class="no">04</span><span class="cat">에이전트 플랫폼 · 오케스트레이션</span><h3>NexusAI</h3>
+      <p>일을 맡기면 여러 AI 에이전트가 역할을 나눠 처리합니다.</p>
+      <ul><li>에이전트 프레임워크 10종 연결</li><li>다섯 역할이 나눠 처리하는 협업</li><li>모델별 데이터 전송처 구분 표시</li></ul>
+      <a class="ap-more" href="./NexusAI/" aria-label="NexusAI 자세히 보기">자세히 보기 <span class="ar">→</span></a></article>
+    <article class="ap-card"><span class="no">05</span><span class="cat">AI 인프라 · 분산 컴퓨팅</span><h3>Cluster-Master</h3>
+      <p>쉬고 있는 PC 여러 대를 묶어 하나의 연산 자원으로 씁니다.</p>
+      <ul><li>네트워크로 운영체제 자동 설치</li><li>말로 지시하면 AI가 작업 분배</li><li>위험한 명령은 3단계 승인</li></ul>
+      <a class="ap-more" href="./Cluster-Master/" aria-label="Cluster-Master 자세히 보기">자세히 보기 <span class="ar">→</span></a></article>
+    <article class="ap-card"><span class="no">06</span><span class="cat">AI 코칭 · 표정 분석</span><h3>PokerFace Pro</h3>
+      <p>얼굴 근육의 움직임을 재어 표정 연습을 돕는 AI 코칭 도구입니다.</p>
+      <ul><li>근육 단위(AU) 실시간 표정 측정</li><li>10개 모드, 100개 연습 시나리오</li><li>영상 원본 미저장, 로컬 AI 코칭</li></ul>
+      <a class="ap-more" href="./PokerFace-Pro/" aria-label="PokerFace Pro 자세히 보기">자세히 보기 <span class="ar">→</span></a></article>
+  </div>
+</div></section>
+
+<!-- 고르는 법 -->
+<section class="sec"><div class="wrap ap-anchor" id="choose">
+  <div class="sec-h"><div><span class="kicker">Which one</span><h2>어떤 일에<br>어떤 플랫폼이 맞을까요</h2></div><p>기술 이름이 아니라 지금 겪는 상황에서 출발해 보십시오. 여러 플랫폼을 함께 쓰는 구성도 상담해 드립니다.</p></div>
+  <div class="pd-tw"><table class="pd-table"><thead><tr><th scope="col">이런 상황이라면</th><th scope="col">맞는 플랫폼</th><th scope="col">하는 일</th></tr></thead><tbody>
+    <tr><th scope="row">생산·품질·재고 기록이 종이와 엑셀에 흩어져 있다</th><td><a class="ap-link" href="./AIMES/">AIMES</a></td><td>생산·품질·재고·설비·이력 기록을 한 화면에 모으고, 위생 관리 지점(HACCP)을 벗어나면 알립니다.</td></tr>
+    <tr><th scope="row">받은 영상·음성·문서가 진짜인지 확인해야 한다</th><td><a class="ap-link" href="./TruthLens/">TruthLens</a></td><td>여섯 갈래로 교차 분석해 5단계 등급으로 판정하고, 근거가 부족하면 판단을 보류합니다.</td></tr>
+    <tr><th scope="row">보고서·메일·일정 같은 반복 업무에 시간을 많이 쓴다</th><td><a class="ap-link" href="./A3-AutoFlow/">A3 AutoFlow</a></td><td>부서별 업무 스킬로 초안을 만들고, 워크플로를 예약해 실행 이력을 남깁니다.</td></tr>
+    <tr><th scope="row">AI 에이전트를 여러 개 만들어 함께 일하게 하고 싶다</th><td><a class="ap-link" href="./NexusAI/">NexusAI</a></td><td>기획·조사·분석·실행·검토 다섯 역할로 일을 나누고, 모델마다 데이터가 가는 곳을 구분해 보여 줍니다.</td></tr>
+    <tr><th scope="row">AI를 돌릴 장비가 부족한데 쉬는 PC는 많다</th><td><a class="ap-link" href="./Cluster-Master/">Cluster-Master</a></td><td>PC에 운영체제를 네트워크로 설치해 묶고, 말로 지시한 작업을 AI가 나눠 맡깁니다.</td></tr>
+    <tr><th scope="row">면접·발표·상담에서 표정과 전달력을 연습하고 싶다</th><td><a class="ap-link" href="./PokerFace-Pro/">PokerFace Pro</a></td><td>표정을 근육 단위로 실시간 측정하고, 연습 시나리오에 맞춘 코칭 문장을 돌려줍니다.</td></tr>
+  </tbody></table></div>
+  <p class="pd-note">플랫폼마다 데이터가 머무는 곳과 사람이 확인해야 하는 지점이 다릅니다. A3 AutoFlow의 구글 업무 도구 연동, NexusAI의 클라우드 AI 모델 연결처럼 외부 서비스와 오가는 기능도 있습니다. 각 상세 화면의 「자주 묻는 질문」에 정리해 두었습니다.</p>
+</div></section>
+
+<!-- One Cycle Dev. Framework 연결 -->
+<section class="sec s"><div class="wrap"><div class="banner ap-anchor" id="onecycle" style="background-image:url(resources/images/A3/renewal/img/ai_intro.jpg)"><span class="kicker">One Cycle Dev. Framework</span><h2>만든 AI는<br>검증까지 한 고리로</h2><p>품질 진단, 보안 분석, 형식 검증, 운영 감시, 지식 자산화를 하나의 순환으로 묶은 검증 체계입니다. AI 플랫폼을 도입한 뒤의 품질과 보안은 One Cycle Dev. Framework에서 이어 갑니다.</p><a class="pill white" href="https://wdlab1958.github.io/a3sc/">One Cycle Dev. Framework 보기 <span class="ar">→</span></a></div></div></section>
+
+<!-- 도입 문의 -->
+<section class="sec s"><div class="wrap"><div class="cta ap-anchor" id="contact"><div><h2>도입을 검토하고 계신가요?</h2><p>업무 환경과 보안 요건에 맞는 AI 플랫폼 구성을 함께 설계해 드립니다.</p><div class="actions" style="margin-top:34px"><a class="pill white" href="mailto:hello@a3sc.co.kr">hello@a3sc.co.kr <span class="ar">→</span></a></div></div><div class="num">대표전화<b>02-6952-2511</b></div></div></div></section>
+
+<script>/* 서브 메뉴: 보고 있는 구역을 표시 */(function(){var nav=document.getElementById('ap-subnav');if(!nav||!('IntersectionObserver' in window))return;var as=nav.querySelectorAll('a'),map={};
+for(var i=0;i<as.length;i++){var el=document.getElementById(as[i].getAttribute('href').slice(1));if(el)map[el.id]=as[i]}
+var io=new IntersectionObserver(function(es){for(var i=0;i<es.length;i++)if(es[i].isIntersecting){for(var j=0;j<as.length;j++)as[j].className='';map[es[i].target.id].className='on'}},{rootMargin:'-30% 0px -60% 0px'});
+for(var id in map)io.observe(document.getElementById(id))})()</script>
+</main>
+
+
+
+
+
+<footer class="gf"><div class="wrap">
+  <div class="top"><div><img src="resources/images/A3/renewal/img/foot_logo.png" alt="A3 SECURITY"><p>1999년 국내 최초의 정보보안 컨설팅 기업. 이제 보안을 아는 AI를 만듭니다.</p></div>
+  <div><h5>회사소개</h5><ul><li><a href="https://www.a3sc.co.kr/a3sc/ISMA3SC002M1.do">회사개요</a></li><li><a href="https://www.a3sc.co.kr/a3sc/ISMA3SC002M2.do">CEO 인사말</a></li><li><a href="https://www.a3sc.co.kr/a3sc/ISMA3SC002M3.do">연혁</a></li><li><a href="https://www.a3sc.co.kr/a3sc/ISMA3SC002M4.do">인재상</a></li><li><a href="https://www.a3sc.co.kr/a3sc/ISMA3SC002M5.do">찾아오시는 길</a></li></ul></div>
+  <div><h5>AI 플랫폼</h5><ul><li><a href="./">개요</a></li><li><a href="./#lineup">플랫폼 6종</a></li><li><a href="https://wdlab1958.github.io/a3sc/">One Cycle Framework</a></li><li class="fam-off"><a>A3 AI 포털 ↗</a></li></ul></div>
+  <div><h5>보안 서비스</h5><ul><li><a href="https://www.a3sc.co.kr/a3sc/ISMA3SC003M1.do">보안컨설팅</a></li><li><a href="https://www.a3sc.co.kr/a3sc/ISMA3SC003M2.do">보안관제</a></li><li><a href="https://www.a3sc.co.kr/a3sc/ISMA3SC003M3.do">보안솔루션</a></li></ul></div>
+  <div><h5>정보센터</h5><ul><li><a href="https://www.a3sc.co.kr/a3sc/ISMA3SC004M1.do?brdType=N">공지사항</a></li><li><a href="https://www.a3sc.co.kr/a3sc/ISMA3SC004M1.do?brdType=C">뉴스클리핑</a></li><li><a href="https://www.a3sc.co.kr/a3sc/ISMA3SC004M1.do?brdType=T">보안동향</a></li><li><a href="https://www.a3sc.co.kr/a3sc/ISMA3SC004M1.do?brdType=R">보안권고</a></li><li><a href="https://www.a3sc.co.kr/a3sc/ISMA3SC005M1.do">사이트맵</a></li></ul></div></div>
+  <div class="mid"><div class="fnb"><ul class="links"><li><a href="https://www.a3sc.co.kr/a3sc/ISMA3SC002M1.do">회사소개</a></li><li><a href="https://www.a3sc.co.kr/a3sc/ISMA3SC005M2.do" class="em">개인정보처리방침</a></li><li><a href="https://www.a3sc.co.kr/a3sc/ISMA3SC002M5.do">오시는길</a></li><li><a href="https://www.a3sc.co.kr/a3sc/ISMA3SC005M1.do">사이트맵</a></li></ul>
+  <details class="family fam-off"><summary>패밀리 사이트</summary><ul><li><a>A3 AiNex &amp; AgentForge</a></li><li><a>AIALBM</a></li><li><a>AiNex</a></li><li><a>AI Cluster Master</a></li><li><a>ADE</a></li><li><a>AEGIS</a></li><li><a>AgentForge</a></li><li><a>AIMES</a></li><li><a>AIMES Eleven</a></li><li><a>Nexus AI</a></li><li><a>TruthLens</a></li></ul></details></div>
+  <ul class="sns"><li class="blog"><a href="https://blog.naver.com/a3security" target="_blank" rel="noopener" aria-label="네이버 블로그"><img src="resources/images/A3/renewal/img/sns/foot_blog.png" alt=""></a></li><li class="facebook"><a href="https://www.facebook.com/hello.a3" target="_blank" rel="noopener" aria-label="페이스북"><img src="resources/images/A3/renewal/img/sns/foot_facebook.png" alt=""></a></li><li class="twitter"><a href="https://twitter.com/a3security_info" target="_blank" rel="noopener" aria-label="트위터"><img src="resources/images/A3/renewal/img/sns/foot_twitter.png" alt=""></a></li></ul></div>
+  <div class="bot"><div><span>(주)에이쓰리시큐리티</span><span>대표자 한재호</span><span>사업자등록번호 172-81-00570</span><span>통신판매신고번호 제2011-서울금천-0931호</span><br><span>07281 서울 영등포구 선유로9길 10, 문래 SK V1 center 1710-11호</span><span>02-6952-2511</span><span>hello@a3sc.co.kr</span></div>
+  <div>© A3SECURITY. ALL RIGHTS RESERVED.</div></div>
+  </div></footer><script>/* 패밀리 사이트: 바깥을 누르면 닫는다 */document.addEventListener('click',e=>{const f=document.querySelector('.gf .family');if(f&&f.open&&!f.contains(e.target))f.open=false})</script>
+
+</body>
+</html>

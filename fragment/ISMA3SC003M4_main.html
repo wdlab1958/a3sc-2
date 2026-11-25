@@ -1,0 +1,75 @@
+<!-- =========================================================
+     AI 플랫폼 · 본문 (기존 레이아웃의 <main> … </main> 안에 넣는 부분)
+     기존 ISMA3SC003M4 화면의 「플랫폼 9종」을 6종으로 바꾸고, 카드마다 상세 화면(ISMA3SC003M11~M16)으로 연결한다.
+     필요한 것: b.css 다음에 /resources/css/A3/renewal/onecycle_product.css, /resources/css/A3/renewal/aiplatform.css
+     ========================================================= -->
+<section class="hero" style="background-image:url(/resources/images/A3/renewal/img/ai_subvisual.jpg)" id="top"><div class="wrap">
+    <span class="kicker">AI Platform</span>
+    <h1>데이터는 지키고,<br>업무는 <em>AI</em>에게</h1>
+    <p class="lede">사내에 설치해 쓰는 Local LLM과 멀티 에이전트로 업무를 자동화합니다. 데이터가 어디에 머무는지는 플랫폼마다 구분해 밝힙니다.</p>
+    <nav class="subnav" id="ap-subnav"><a href="#intro" class="on">개요</a><a href="#strength">강점</a><a href="#lineup">플랫폼 6종</a><a href="#choose">고르는 법</a><a href="#onecycle">One Cycle</a><a href="#contact">도입 문의</a></nav></div></section>
+
+<!-- 개요 -->
+<section class="sec"><div class="wrap intro ap-anchor" id="intro"><div><span class="kicker">Overview</span><h2>기업의 <em>데이터를 지키며</em><br>업무를 자동화하는 AI 전환</h2></div>
+    <div class="prose"><p class="big">AI 활용이 본격화되면서 기업의 핵심 데이터가 외부 AI 서비스로 유출될 수 있다는 새로운 위험이 대두되었습니다.</p>
+    <p>에이쓰리시큐리티는 Local LLM 기반 폐쇄망 AI 플랫폼을 구축해 데이터 주권을 지키면서 업무 생산성을 확보하는 데 주력하고 있습니다. 20년간 축적한 보안 컨설팅·관제 노하우와 결합한 멀티 에이전트 기술로 산업별 AI 전환 시장을 개척하고 있습니다.</p>
+    <p>지금은 여섯 가지 플랫폼에 집중합니다. 공장, 사무실, 교육 현장처럼 쓰이는 곳이 분명한 것만 골랐고, 플랫폼마다 무엇을 넣으면 무엇이 나오는지 쉬운 말로 풀어 둔 상세 화면을 마련했습니다.</p></div></div></section>
+
+<!-- 강점 -->
+<section class="sec soft"><div class="wrap ap-anchor" id="strength"><div class="sec-h"><div><span class="kicker">Strengths</span><h2>보안 회사가 만든 AI의 차이</h2></div></div><div class="bento">
+    <div class="tile c7" style="background-image:url(/resources/images/A3/renewal/img/ai_st1.jpg)"><h3>데이터 주권을 지키는 폐쇄망 AI</h3><p>Local LLM(Ollama·vLLM) 온프레미스 구축. 외부 서비스와 오가는 기능은 따로 구분해 표시</p></div><div class="tile c5" style="background-image:url(/resources/images/A3/renewal/img/ai_st2.jpg)"><h3>협업하는 멀티 에이전트</h3><p>기획·조사·분석·실행·검토로 역할을 나누는 협업, 에이전트 프레임워크 10종 연결</p></div><div class="tile c5" style="background-image:url(/resources/images/A3/renewal/img/ai_st3.jpg)"><h3>사람이 승인하는 보안 설계</h3><p>위험한 명령의 단계별 승인, 실행 이력과 감사 기록</p></div><div class="tile c7" style="background-image:url(/resources/images/A3/renewal/img/ai_st4.jpg)"><h3>검증하고 한계를 밝히는 운영</h3><p>여섯 플랫폼 모두 모델 검사로 결함을 찾아 기록하고, 보증 범위와 한계를 상세 화면에 공개</p></div></div></div></section>
+
+<!-- 플랫폼 6종 -->
+<section class="sec dark"><div class="wrap ap-anchor" id="lineup"><div class="sec-h"><div><span class="kicker">Lineup</span><h2>6종의 AI 플랫폼</h2></div><p>제조 현장부터 사무 업무, AI 인프라, 사람의 소통 훈련까지. 카드의 「자세히 보기」에서 플랫폼별 상세 화면으로 이어집니다.</p></div>
+  <div class="ap-grid">
+    <article class="ap-card"><span class="no">01</span><span class="cat">산업 특화 · AI 제조실행시스템(MES)</span><h3>AIMES</h3>
+      <p>생산·품질·위생 기록을 한 화면에 모으고 AI가 이상 조짐을 알립니다.</p>
+      <ul><li>HACCP 관리 지점 감시와 이탈 경고</li><li>원재료에서 완제품까지 LOT 추적</li><li>공장 안 로컬 AI의 예측과 보고서</li></ul>
+      <a class="ap-more" href="/a3sc/ISMA3SC003M11.do" aria-label="AIMES 자세히 보기">자세히 보기 <span class="ar">→</span></a></article>
+    <article class="ap-card"><span class="no">02</span><span class="cat">AI 신뢰 · 딥페이크 탐지</span><h3>TruthLens</h3>
+      <p>영상·이미지·음성의 조작 가능성을 근거와 함께 판정합니다.</p>
+      <ul><li>여섯 갈래 교차 분석과 5단계 판정</li><li>근거가 부족하면 「판단 보류」</li><li>AI 모델은 조직 내부 서버에서 구동</li></ul>
+      <a class="ap-more" href="/a3sc/ISMA3SC003M12.do" aria-label="TruthLens 자세히 보기">자세히 보기 <span class="ar">→</span></a></article>
+    <article class="ap-card"><span class="no">03</span><span class="cat">업무 자동화 · 로컬 LLM</span><h3>A3 AutoFlow</h3>
+      <p>반복되는 부서 업무의 초안을 사내 AI가 먼저 씁니다.</p>
+      <ul><li>19개 부서, 67개 업무 스킬</li><li>워크플로 예약 실행과 이력 기록</li><li>초안 작성은 사내 언어 모델로</li></ul>
+      <a class="ap-more" href="/a3sc/ISMA3SC003M13.do" aria-label="A3 AutoFlow 자세히 보기">자세히 보기 <span class="ar">→</span></a></article>
+    <article class="ap-card"><span class="no">04</span><span class="cat">에이전트 플랫폼 · 오케스트레이션</span><h3>NexusAI</h3>
+      <p>일을 맡기면 여러 AI 에이전트가 역할을 나눠 처리합니다.</p>
+      <ul><li>에이전트 프레임워크 10종 연결</li><li>다섯 역할이 나눠 처리하는 협업</li><li>모델별 데이터 전송처 구분 표시</li></ul>
+      <a class="ap-more" href="/a3sc/ISMA3SC003M14.do" aria-label="NexusAI 자세히 보기">자세히 보기 <span class="ar">→</span></a></article>
+    <article class="ap-card"><span class="no">05</span><span class="cat">AI 인프라 · 분산 컴퓨팅</span><h3>Cluster-Master</h3>
+      <p>쉬고 있는 PC 여러 대를 묶어 하나의 연산 자원으로 씁니다.</p>
+      <ul><li>네트워크로 운영체제 자동 설치</li><li>말로 지시하면 AI가 작업 분배</li><li>위험한 명령은 3단계 승인</li></ul>
+      <a class="ap-more" href="/a3sc/ISMA3SC003M15.do" aria-label="Cluster-Master 자세히 보기">자세히 보기 <span class="ar">→</span></a></article>
+    <article class="ap-card"><span class="no">06</span><span class="cat">AI 코칭 · 표정 분석</span><h3>PokerFace Pro</h3>
+      <p>얼굴 근육의 움직임을 재어 표정 연습을 돕는 AI 코칭 도구입니다.</p>
+      <ul><li>근육 단위(AU) 실시간 표정 측정</li><li>10개 모드, 100개 연습 시나리오</li><li>영상 원본 미저장, 로컬 AI 코칭</li></ul>
+      <a class="ap-more" href="/a3sc/ISMA3SC003M16.do" aria-label="PokerFace Pro 자세히 보기">자세히 보기 <span class="ar">→</span></a></article>
+  </div>
+</div></section>
+
+<!-- 고르는 법 -->
+<section class="sec"><div class="wrap ap-anchor" id="choose">
+  <div class="sec-h"><div><span class="kicker">Which one</span><h2>어떤 일에<br>어떤 플랫폼이 맞을까요</h2></div><p>기술 이름이 아니라 지금 겪는 상황에서 출발해 보십시오. 여러 플랫폼을 함께 쓰는 구성도 상담해 드립니다.</p></div>
+  <div class="pd-tw"><table class="pd-table"><thead><tr><th scope="col">이런 상황이라면</th><th scope="col">맞는 플랫폼</th><th scope="col">하는 일</th></tr></thead><tbody>
+    <tr><th scope="row">생산·품질·재고 기록이 종이와 엑셀에 흩어져 있다</th><td><a class="ap-link" href="/a3sc/ISMA3SC003M11.do">AIMES</a></td><td>생산·품질·재고·설비·이력 기록을 한 화면에 모으고, 위생 관리 지점(HACCP)을 벗어나면 알립니다.</td></tr>
+    <tr><th scope="row">받은 영상·음성·문서가 진짜인지 확인해야 한다</th><td><a class="ap-link" href="/a3sc/ISMA3SC003M12.do">TruthLens</a></td><td>여섯 갈래로 교차 분석해 5단계 등급으로 판정하고, 근거가 부족하면 판단을 보류합니다.</td></tr>
+    <tr><th scope="row">보고서·메일·일정 같은 반복 업무에 시간을 많이 쓴다</th><td><a class="ap-link" href="/a3sc/ISMA3SC003M13.do">A3 AutoFlow</a></td><td>부서별 업무 스킬로 초안을 만들고, 워크플로를 예약해 실행 이력을 남깁니다.</td></tr>
+    <tr><th scope="row">AI 에이전트를 여러 개 만들어 함께 일하게 하고 싶다</th><td><a class="ap-link" href="/a3sc/ISMA3SC003M14.do">NexusAI</a></td><td>기획·조사·분석·실행·검토 다섯 역할로 일을 나누고, 모델마다 데이터가 가는 곳을 구분해 보여 줍니다.</td></tr>
+    <tr><th scope="row">AI를 돌릴 장비가 부족한데 쉬는 PC는 많다</th><td><a class="ap-link" href="/a3sc/ISMA3SC003M15.do">Cluster-Master</a></td><td>PC에 운영체제를 네트워크로 설치해 묶고, 말로 지시한 작업을 AI가 나눠 맡깁니다.</td></tr>
+    <tr><th scope="row">면접·발표·상담에서 표정과 전달력을 연습하고 싶다</th><td><a class="ap-link" href="/a3sc/ISMA3SC003M16.do">PokerFace Pro</a></td><td>표정을 근육 단위로 실시간 측정하고, 연습 시나리오에 맞춘 코칭 문장을 돌려줍니다.</td></tr>
+  </tbody></table></div>
+  <p class="pd-note">플랫폼마다 데이터가 머무는 곳과 사람이 확인해야 하는 지점이 다릅니다. A3 AutoFlow의 구글 업무 도구 연동, NexusAI의 클라우드 AI 모델 연결처럼 외부 서비스와 오가는 기능도 있습니다. 각 상세 화면의 「자주 묻는 질문」에 정리해 두었습니다.</p>
+</div></section>
+
+<!-- One Cycle Dev. Framework 연결 -->
+<section class="sec s"><div class="wrap"><div class="banner ap-anchor" id="onecycle" style="background-image:url(/resources/images/A3/renewal/img/ai_intro.jpg)"><span class="kicker">One Cycle Dev. Framework</span><h2>만든 AI는<br>검증까지 한 고리로</h2><p>품질 진단, 보안 분석, 형식 검증, 운영 감시, 지식 자산화를 하나의 순환으로 묶은 검증 체계입니다. AI 플랫폼을 도입한 뒤의 품질과 보안은 One Cycle Dev. Framework에서 이어 갑니다.</p><a class="pill white" href="/a3sc/ISMA3SC003M5.do">One Cycle Dev. Framework 보기 <span class="ar">→</span></a></div></div></section>
+
+<!-- 도입 문의 -->
+<section class="sec s"><div class="wrap"><div class="cta ap-anchor" id="contact"><div><h2>도입을 검토하고 계신가요?</h2><p>업무 환경과 보안 요건에 맞는 AI 플랫폼 구성을 함께 설계해 드립니다.</p><div class="actions" style="margin-top:34px"><a class="pill white" href="mailto:hello@a3sc.co.kr">hello@a3sc.co.kr <span class="ar">→</span></a></div></div><div class="num">대표전화<b>02-6952-2511</b></div></div></div></section>
+
+<script>/* 서브 메뉴: 보고 있는 구역을 표시 */(function(){var nav=document.getElementById('ap-subnav');if(!nav||!('IntersectionObserver' in window))return;var as=nav.querySelectorAll('a'),map={};
+for(var i=0;i<as.length;i++){var el=document.getElementById(as[i].getAttribute('href').slice(1));if(el)map[el.id]=as[i]}
+var io=new IntersectionObserver(function(es){for(var i=0;i<es.length;i++)if(es[i].isIntersecting){for(var j=0;j<as.length;j++)as[j].className='';map[es[i].target.id].className='on'}},{rootMargin:'-30% 0px -60% 0px'});
+for(var id in map)io.observe(document.getElementById(id))})()</script>

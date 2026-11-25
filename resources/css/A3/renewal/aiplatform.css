@@ -1,0 +1,37 @@
+/* =========================================================
+   AI 플랫폼 (ISMA3SC003M4) 화면 전용 확장 — 플랫폼 6종 카드
+   - b.css, onecycle_product.css 뒤에 불러온다. b.css 의 변수(--red, --n850 …)를 그대로 쓴다.
+   - 이 파일의 선택자는 모두 .ap- 로 시작하므로 다른 화면에 영향을 주지 않는다.
+   ========================================================= */
+.ap-anchor{scroll-margin-top:48px}
+
+/* ---------- 플랫폼 카드 (어두운 구역) ---------- */
+.ap-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.ap-card{position:relative;overflow:hidden;isolation:isolate;display:flex;flex-direction:column;border-radius:var(--r-lg);padding:34px 30px 30px;background:linear-gradient(160deg,#1a2848 0%,#0e1830 60%);border:1px solid rgba(255,255,255,.08);transition:.25s}
+.ap-card::after{content:'';position:absolute;z-index:-1;right:-70px;top:-70px;width:240px;height:240px;border-radius:50%;background:radial-gradient(circle,rgba(229,50,43,.38),transparent 70%)}
+.ap-card:hover{transform:translateY(-4px);border-color:rgba(255,255,255,.22)}
+.ap-card .no{font-size:13px;font-weight:700;letter-spacing:.1em;color:#ff8278;font-variant-numeric:tabular-nums}
+.ap-card .cat{margin-top:6px;font-size:13px;font-weight:600;letter-spacing:.04em;color:#8d99ad}
+.ap-card h3{margin:20px 0 12px;font-size:32px;color:#fff;letter-spacing:-.04em;line-height:1.15}
+.ap-card p{font-size:16px;line-height:1.7;color:#b6c0d1}
+.ap-card ul{margin-top:22px;flex:1}
+.ap-card li{position:relative;padding:10px 0 10px 16px;font-size:15px;color:#dfe5ee;border-top:1px solid rgba(255,255,255,.1)}
+.ap-card li::before{content:'';position:absolute;left:0;top:19px;width:5px;height:5px;border-radius:50%;background:var(--red)}
+.ap-more{display:inline-flex;align-items:center;gap:8px;align-self:flex-start;margin-top:24px;height:44px;padding:0 20px;border-radius:999px;border:1px solid rgba(255,255,255,.3);font-size:15px;font-weight:600;color:#fff;white-space:nowrap;transition:.2s}
+.ap-more:hover{background:var(--red);border-color:var(--red)}
+.ap-more:focus-visible{outline:2px solid #fff;outline-offset:3px}
+.ap-more .ar{font-size:17px;line-height:1}
+/* 카드 전체를 눌러도 상세 화면으로 간다 */
+.ap-more::before{content:'';position:absolute;inset:0}
+
+/* ---------- 표 안의 플랫폼 링크 ---------- */
+.ap-link{font-weight:700;color:var(--ink);border-bottom:1px solid var(--g300);transition:.2s;white-space:nowrap}
+.ap-link:hover{color:var(--red);border-color:var(--red)}
+
+/* ---------- 반응형 (b.css 와 같은 기준 폭) ---------- */
+@media (max-width:1100px){.ap-grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:760px){
+  .ap-grid{grid-template-columns:1fr}
+  .ap-card{padding:28px 24px 26px}
+  .ap-card h3{font-size:28px}
+}
